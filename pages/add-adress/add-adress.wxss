@@ -1,0 +1,22 @@
+.adress-item {
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    background: #fff;
+    align-items: center;
+}
+
+.adress-item view.first {
+    width: 200rpx;
+    text-align: center;
+}
+
+.adress-item view:nth-child(2) {
+    flex: 1;
+}
+
+.picker {
+    width: 100%;
+    font-size: 24rpx;
+    color: #565656;
+}

@@ -1,0 +1,235 @@
+.money {
+    width: 690rpx;
+    height: 90rpx;
+    margin: auto;
+    margin-top: 15rpx;
+    background: rgba(255,255,255,1);
+    border-radius: 8rpx;
+    border: .8px solid rgba(241,241,241,1);
+    box-sizing: border-box;
+    padding: 0 90rpx;
+    font-size: 28rpx;
+    color: rgba(161,161,161,1);
+}
+
+.button {
+    margin: auto;
+    width: 500rpx;
+    height: 90rpx;
+    background: #3883fa;
+    color: #fff;
+    text-align: center;
+    line-height: 90rpx;
+    margin-top: 70rpx;
+    background: rgba(52,52,62,1);
+    box-shadow: 0px 4rpx 8rpx 0rpx rgba(91,91,100,0.23);
+    border-radius: 10rpx;
+}
+
+.payTypeList {
+    background: #fff;
+    width: 690rpx;
+    margin: auto;
+    margin-top: 15rpx;
+    font-size: 28rpx;
+    color: rgba(86,86,86,1);
+}
+
+.payTypeList .icon {
+    margin: 0 10rpx 0 20rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.payTypeList .text {
+    flex: 1;
+}
+
+.payTypeList .icon image {
+    width: 100%;
+    height: 100%;
+}
+
+.payTypeList .pay-item {
+    width: 100%;
+    margin: auto;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #F0F0F0;
+    justify-content: space-between;
+    transition: all .3s;
+}
+
+.payTypeList .pay-item:last-child {
+    border-bottom: none;
+}
+
+.payTypeList .image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 10rpx;
+}
+
+.totaMoney {
+    padding-top: 1rpx;
+    text-align: center;
+    width: 100%;
+    height: 180rpx;
+    background: #fff;
+}
+
+.totaMoney view:nth-child(1) {
+    margin-top: 36rpx;
+    font-size: 26rpx;
+    color: rgba(128,128,128,1);
+}
+
+.totaMoney view:nth-child(2) {
+    margin-top: 10rpx;
+    font-size: 50rpx;
+    color: rgba(68,68,68,1);
+    line-height: 60rpx;
+}
+
+.after-save {
+    width: 690rpx;
+    margin: auto;
+    font-size: 26rpx;
+    color: #808080;
+    line-height: 37rpx;
+    margin-top: 30rpx;
+}
+
+.after-save text {
+    color: #565656;
+    margin-left: 40rpx;
+}
+
+.selectNums {
+    width: 690rpx;
+    height: 90rpx;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10rpx;
+}
+
+.selectNums .selecet-item {
+    width: 220rpx;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    border-radius: 8rpx;
+    border: .8px solid rgba(241,241,241,1);
+    font-size: 32rpx;
+    color: rgba(86,86,86,1);
+    line-height: 90rpx;
+    text-align: center;
+    transition: all .3s;
+}
+
+.selectNums .selecet-item.active {
+    background: url('https://img.rekoon.cn/integrals/choose_btn_h@2x.png') no-repeat;
+    background-size: 100% 100%;
+    color: rgba(109,132,221,1);
+}
+
+.select-title {
+    font-size: 26rpx;
+    color: rgba(128,128,128,1);
+    width: 690rpx;
+    margin: auto;
+    margin-top: 40rpx;
+}
+
+.over-wrap {
+    box-sizing: border-box;
+    padding-top: 48rpx;
+    width: 590rpx;
+    height: 374rpx;
+    background: rgba(255,255,255,1);
+    border-radius: 10rpx;
+    text-align: center;
+}
+
+.over-wrap image {
+    width: 63rpx;
+    height: 62rpx;
+    margin: auto;
+}
+
+.over-wrap .success {
+    font-size: 36rpx;
+    color: rgba(42,42,42,1);
+    margin-top: 24rpx;
+}
+
+.over-button {
+    width: 370rpx;
+    height: 80rpx;
+    background: rgba(52,52,62,1);
+    box-shadow: 0px -1rpx 0rpx 0rpx rgba(232,232,232,1);
+    border-radius: 10rpx;
+    margin: auto;
+    margin-top: 50rpx;
+    color: #fff;
+    line-height: 80rpx;
+    font-size: 28rpx;
+}
+
+.insputer {
+    width: 610rpx;
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background: #fff;
+    font-size: 58rpx;
+    color: #444444;
+}
+
+.price-text {
+    font-size: 58rpx;
+    text-align: left;
+    width: 90rpx;
+}
+
+.insputer input {
+    height: 100%;
+}
+
+.money-content {
+    width: 690rpx;
+    border-radius: 10rpx;
+    background: #fff;
+    margin: auto;
+    margin-top: 40rpx;
+}
+
+.money-info {
+    width: 610rpx;
+    height: 110rpx;
+    line-height: 110rpx;
+    font-size: 30rpx;
+    color: #565656;
+    margin: auto;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+
+.tixian-tips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    color: gray;
+    margin-top: 30rpx;
+}
+
+.tip-icon {
+    margin-right: 10rpx;
+    width: 26rpx;
+    height: 26rpx;
+    position: relative;
+    top: -2rpx;
+    display: block;
+}

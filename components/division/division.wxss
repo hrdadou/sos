@@ -1,0 +1,90 @@
+.header {
+    width: 100%;
+    margin-bottom: 40rpx;
+}
+
+.title_name {
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 32rpx;
+}
+
+.title_ename {
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 22rpx;
+}
+
+.division {
+    width: 702rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    padding-top: 50rpx;
+    margin: 20rpx auto 0;
+}
+
+.productList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin-bottom: 60rpx;
+    flex-wrap: wrap;
+    width: 225rpx;
+    margin-left: 10rpx;
+}
+
+.item image {
+    width: 224rpx;
+    height: 224rpx;
+    margin: auto;
+}
+
+.btn {
+    width: 160rpx;
+    height: 68rpx;
+    line-height: 68rpx;
+    background: url(https://img.rekoon.cn/newHome/sold_btn.png) no-repeat;
+    background-size: 160rpx 68rpx;
+    border-radius: 4rpx;
+    font-size: 24rpx;
+    color: #6a6a6a;
+    text-align: center;
+    margin: 20rpx auto;
+}
+
+.name {
+    font-size: 28rpx;
+    color: #686868;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+}
+
+.heigh_price {
+    height: 32rpx;
+    line-height: 32rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #f5655b;
+}
+
+.heigh_price text {
+    font-size: 32rpx;
+    color: ##f5655b;
+}
+
+.recycle {
+    height: 30rpx;
+    line-height: 30rpx;
+    text-align: center;
+    font-size: 22rpx;
+    color: #A1A1A1;
+    margin-bottom: 14rpx;
+}
+
+.recycle text {
+    text-decoration: line-through;
+}

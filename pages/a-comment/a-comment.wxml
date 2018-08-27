@@ -1,0 +1,56 @@
+<view class="header">
+    <view class="header_left">
+        <view class="left">满意率</view>
+        <view class="satisfaction">{{satisfaction}}%</view>
+    </view>
+    <view class="header_right">
+        <view>全部
+      <text>{{total}}</text>
+        </view>
+    </view>
+</view>
+<view class="commentList" wx:for="{{commentList}}" wx:key="{{index}}">
+    <view class="top">
+        <view class="top_left">
+            <view class="img">
+                <image src="{{item.userImg}}"></image>
+            </view>
+        </view>
+        <view class="right">
+            <view class="right_top">
+                <view class="right_phone">{{item.phone}}</view>
+                <view class="right_date">{{item.time}}</view>
+            </view>
+            <view class="star">
+                <view wx:if="{{item.evaluate>=1}}">
+                    <image src="https://shop-img.rekoon.cn/img/sold_home_speak_star_choose.png"></image>
+                </view>
+                <view wx:if="{{item.evaluate>=2}}">
+                    <image src="https://shop-img.rekoon.cn/img/sold_home_speak_star_choose.png"></image>
+                </view>
+                <view wx:if="{{item.evaluate>=3}}">
+                    <image src="https://shop-img.rekoon.cn/img/sold_home_speak_star_choose.png"></image>
+                </view>
+                <view wx:if="{{item.evaluate>=4}}">
+                    <image src="https://shop-img.rekoon.cn/img/sold_home_speak_star_choose.png"></image>
+                </view>
+                <view wx:if="{{item.evaluate>=5}}">
+                    <image src="https://shop-img.rekoon.cn/img/sold_home_speak_star_choose.png"></image>
+                </view>
+            </view>
+            <view class="comment">{{item.content}}</view>
+            <view class="images-wrapper">
+                <image bindtap="imgClick" data-img="{{item.imgUrl}}" data-index="{{index}}" src="{{item.imgUrl+'-w180h180'}}" wx:for="{{item.images}}" wx:for-index="bindex" wx:key="{{bindex}}"></image>
+            </view>
+            <view class="right_bottom">
+                <view class="phone_name">{{item.type||item.modelName}}</view>
+                <view>[{{item.condition}}]</view>
+                <view class="price">{{buy==2?'收入':'成交价'}}:
+          <text> ￥{{item.price}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view bindtap="more" class="more">加载中...</view>
+<loads wx:if="{{ready}}"></loads>

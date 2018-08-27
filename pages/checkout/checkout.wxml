@@ -1,0 +1,12 @@
+<view class="wrapper" wx:if="{{showModel}}">
+    <view class="model">
+        <view class="title">确认要取消支付？</view>
+        <view class="content">您的订单在{{timeminute}}分钟{{timesecond}}秒钟内未支付</view>
+        <view class="content">将被取消，请尽快完成支付</view>
+        <view class="button-bottom">
+            <view bindtap="cancel">确认离开</view>
+            <view bindtap="success" wx:if="{{show==1}}">继续支付</view>
+            <view bindtap="cancel" style="color:#666971" wx:else>已超时</view>
+        </view>
+    </view>
+</view>

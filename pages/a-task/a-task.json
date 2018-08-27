@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "任务列表",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "pop-model": "/components/pop-model/pop-model",
+        "task-bar": "/components/task-bar/task-bar",
+        "loads": "/components/loads/loads"
+    }
+}

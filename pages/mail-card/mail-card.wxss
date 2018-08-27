@@ -1,0 +1,381 @@
+.wrapper {
+    width: 100vw;
+    height: 400rpx;
+    background: url('https://img.rekoon.cn/integra/banner/ticket_bg.png') no-repeat;
+    background-size: 100% 400rpx;
+    padding-top: 1rpx;
+}
+
+.box {
+    width: 702rpx;
+    margin: auto;
+    margin-top: 20rpx;
+    background: #fff;
+    border-radius: 4rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 702rpx;
+    min-height: 229rpx;
+    background: rgba(255,255,255,1);
+    border-radius: 4rpx;
+    margin: auto;
+    margin-top: 345rpx;
+    padding: 16rpx;
+    box-sizing: border-box;
+}
+
+.content-tips {
+    padding: 27rpx 24rpx;
+    height: 100%;
+    font-size: 26rpx;
+    color: rgba(106,106,106,1);
+    line-height: 46rpx;
+    border-radius: 4rpx;
+    border: 1px solid rgba(220,227,229,1);
+}
+
+.active-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 26rpx;
+    color: rgba(86,86,86,1);
+    line-height: 37rpx;
+}
+
+.active-title .left view:nth-child(1) {
+    width: 6rpx;
+    height: 25rpx;
+    margin-right: 8rpx;
+    background: rgba(96,170,199,1);
+    border-radius: 3rpx;
+}
+
+.active-title .right image {
+    width: 20rpx;
+    height: 24rpx;
+    display: block;
+}
+
+.icon-wrapper {
+    margin-top: 27rpx;
+    width: 100%;
+    padding: 0 53rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-wrapper .img-w {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.icon-wrapper .img-l {
+    width: 50rpx;
+    height: 82rpx;
+}
+
+.icon-wrapper .img-w image {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-wrapper .img-l image {
+    width: 100%;
+    height: 100%;
+}
+
+.text-list {
+    margin-top: 13rpx;
+    padding: 0 46rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: rgba(106,106,106,1);
+    line-height: 33rpx;
+}
+
+.text-list text {
+    width: 168rpx;
+    display: block;
+}
+
+.text-list text:last-child {
+    position: relative;
+    right: -37rpx;
+}
+
+.bottom-button {
+    width: 100vw;
+    height: 120rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 1rpx 0rpx 0rpx rgba(197,198,199,0.51);
+}
+
+.bottom-button .botton-w {
+    width: 690rpx;
+    height: 100rpx;
+    background: url('https://img.rekoon.cn/integral/bottom.png');
+    background-size: 100% 100%;
+    font-size: 28rpx;
+    color: rgba(255,255,255,1);
+    line-height: 90rpx;
+    text-align: center;
+    margin: auto;
+    margin-top: 15rpx;
+}
+
+.bottom {
+    width: 100%;
+    height: 120rpx;
+}
+
+.all-integel {
+    width: 640rpx;
+    margin-left: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all-integel .img {
+    width: 54rpx;
+    height: 54rpx;
+}
+
+.all-integel .img image {
+    width: 100%;
+    height: 100%;
+}
+
+.go-goods {
+    position: relative;
+    top: 5rpx;
+    width: 182rpx;
+    height: 57rpx;
+    font-size: 24rpx;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    line-height: 48rpx;
+    background: url('https://img.rekoon.cn/integral/sign_in_btn@2x.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.total-inte {
+    flex: 1;
+    margin-left: 20rpx;
+    font-size: 30rpx;
+    color: rgba(86,86,86,1);
+}
+
+.total-inte text {
+    color: #E24C42;
+}
+
+.avator-wrapper {
+    width: 494rpx;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 34rpx;
+}
+
+.avator-wrapper .imgs {
+    position: relative;
+    width: 68rpx;
+    height: 68rpx;
+}
+
+.avator-wrapper .header {
+    width: 52rpx;
+    height: 24rpx;
+    position: absolute;
+    bottom: -5rpx;
+    left: 9rpx;
+}
+
+.avator-wrapper .imgs .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100rpx;
+    overflow: hidden;
+}
+
+.people-text {
+    font-size: 26rpx;
+    color: rgba(86,86,86,1);
+    line-height: 37rpx;
+    text-align: center;
+    margin-top: 38rpx;
+}
+
+.button-invite {
+    font-size: 30rpx;
+    color: rgba(255,255,255,1);
+    width: 336rpx;
+    height: 94rpx;
+    margin: auto;
+    background: url(https://img.rekoon.cn/integral/dddd.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 80rpx;
+    margin-top: 40rpx;
+    margin-bottom: 48rpx;
+}
+
+.button-invite.reset {
+    background: url('https://img.rekoon.cn/integra/sign_in_btn@2x.png') no-repeat!important;
+    width: 246rpx;
+    background-size: 100% 100%!important;
+}
+
+.hasNone {
+    position: relative;
+    padding-top: 1rpx;
+    width: 590rpx;
+    height: 473rpx;
+    background: url('https://img.rekoon.cn/integral/pop_bg@2x.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.hasNone image {
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: 25rpx;
+    right: 0;
+}
+
+.pop-text {
+    font-size: 32rpx;
+    color: rgba(86,86,86,1);
+    line-height: 45rpx;
+    margin-top: 192rpx;
+}
+
+.pop-text.end {
+    margin-top: 10rpx!important;
+}
+
+.pop-text text {
+    font-size: 32rpx;
+    font-family: Helvetica-Bold;
+    color: rgba(226,81,73,1);
+    line-height: 38rpx;
+}
+
+.text-care {
+    font-size: 24rpx;
+    color: rgba(106,106,106,1);
+    line-height: 33rpx;
+    margin-top: 27rpx;
+}
+
+.pop-button {
+    width: 336rpx;
+    height: 122rpx;
+    margin: auto;
+    margin-top: 34rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 30rpx;
+    line-height: 92rpx;
+    background: url('https://img.rekoon.cn/integrals/sign_in_btn@2x.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.null-img {
+    width: 68rpx;
+    height: 68rpx;
+    border-radius: 60rpx;
+    background: rgba(245,245,245,1);
+    font-size: 32rpx;
+    color: rgba(174,174,174,1);
+    line-height: 68rpx;
+    text-align: center;
+}
+
+.help-wrapper {
+    width: 590rpx;
+    padding: 40rpx;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+.help-wrapper image {
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: -75rpx;
+    right: 0;
+}
+
+.help-wrapper .title {
+    font-size: 30rpx;
+    color: rgba(86,86,86,1);
+    line-height: 42rpx;
+    text-align: center;
+    margin-bottom: 15rpx;
+}
+
+.help-wrapper .p {
+    font-size: 26rpx;
+    color: rgba(106,106,106,1);
+    line-height: 50rpx;
+}
+
+.group-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    color: #48BE84;
+    margin-top: 22rpx;
+}
+
+.group-status.fail {
+    color: #E25149;
+}
+
+.group-status image {
+    width: 40rpx;
+    height: 40rpx;
+    display: block;
+    margin-right: 13rpx;
+}
+
+.group-status view {
+    margin-right: 10rpx;
+}
+
+.success-tip {
+    font-size: 24rpx;
+    color: #808080;
+    text-align: center;
+    margin-top: 10rpx;
+}
+
+.botton-home {
+    width: 336rpx;
+    height: 101rpx;
+    background: url('https://img.rekoon.cn/integra/sold_btn_evaluate@2x.png') no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 30rpx;
+    line-height: 89rpx;
+    text-align: center;
+    position: fixed;
+    bottom: 56rpx;
+    left: 50%;
+    margin-left: -168rpx;
+}

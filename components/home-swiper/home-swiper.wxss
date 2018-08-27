@@ -1,0 +1,47 @@
+.wrap {
+    padding-bottom: 20rpx;
+    background: #fff;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 450rpx;
+    background: #fff;
+}
+
+.swiper .slide-image {
+    width: 94.6666%;
+    height: 94.6666%;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 2.666%;
+    border-radius: 10rpx;
+}
+
+.swiper .slide-image image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.indicators {
+    left: 50%;
+    bottom: 70rpx;
+    position: absolute;
+    height: 6rpx;
+    transform: translate3d(-50%,0,0);
+}
+
+.indicators .i {
+    display: inline-block;
+    width: 30rpx;
+    height: 4rpx;
+    margin: 0 5rpx;
+    background: rgba(0,0,0,0.20);
+}
+
+.indicators .i.active {
+    background: #fff;
+}

@@ -1,0 +1,74 @@
+<view class="wrapper">
+    <view class="sell-top">
+        <view class="sell-text">换钱流程</view>
+        <view class="sell-en">Conversion Process</view>
+        <view class="sell-lin-img">
+            <image class="big" src="https://img.rekoon.cn/sell_interge/change_1@2x.png"></image>
+            <image class="small" src="https://img.rekoon.cn/sell_interge/arrow@2x.png"></image>
+            <image class="big" src="https://img.rekoon.cn/sell_interge/change_2@2x.png"></image>
+            <image class="small" src="https://img.rekoon.cn/sell_interge/arrow@2x.png"></image>
+            <image class="big" src="https://img.rekoon.cn/sell_interge/change_3@2x.png"></image>
+            <image class="small" src="https://img.rekoon.cn/sell_interge/arrow@2x.png"></image>
+            <image class="big" src="https://img.rekoon.cn/intergal/search/change_4@2x.png"></image>
+        </view>
+        <view class="text-flex">
+            <view>选择机型</view>
+            <view>估价下单</view>
+            <view>顺丰包邮</view>
+            <view>坐等收钱</view>
+        </view>
+    </view>
+    <view class="select-model">
+        <view class="imgWrpper">
+            <image bindtap="goSell" data-id="{{item.id}}" src="{{item.url}}" wx:for="{{cheoseList}}" wx:key="{{index}}"></image>
+        </view>
+        <view class="textWrpper">
+            <view wx:for="{{cheoseList}}" wx:key="{{index}}">{{item.title}}</view>
+        </view>
+    </view>
+    <view class="box baoz">
+        <view class="sell-text">服务保障</view>
+        <view class="sell-en">Service Guarantees</view>
+        <view class="rich-text">
+            <view class="rich-item">
+                <view class="rich-title">
+                    <image src="https://img.rekoon.cn/sell_interge/sold_safeguard_5@2x.png"></image>
+                    <view>5天保价</view>
+                </view>
+                <view class="rich-info">
+          从估价下单到焕熊收货期间,按当时闲置价值,超长5天保价
+        </view>
+            </view>
+            <view class="rich-item">
+                <view class="rich-title">
+                    <image src="https://img.rekoon.cn/sell_interge/sold_safeguard_3@2x.png"></image>
+                    <view>24h换钱</view>
+                </view>
+                <view class="rich-info">
+          保证在收货后24小时内完成质检,并解冻钱包中的可提现金额
+        </view>
+            </view>
+        </view>
+        <view class="rich-text">
+            <view class="rich-item">
+                <view class="rich-title">
+                    <image src="https://img.rekoon.cn/sell_interge/sold_safeguard_sf@2x.png"></image>
+                    <view>顺丰上门</view>
+                </view>
+                <view class="rich-info">
+          在线估价后,可下单预约顺丰免费上门取件
+        </view>
+            </view>
+            <view class="rich-item">
+                <view class="rich-title">
+                    <image src="https://img.rekoon.cn/sell_interge/sold_safeguard_safe@2x.png"></image>
+                    <view>专业质检</view>
+                </view>
+                <view class="rich-info">
+          全程视频监控,由资深工程师质检认证并彻底清除设备数据
+        </view>
+            </view>
+        </view>
+    </view>
+    <comment-home data="{{commentList}}" satisfy="{{satisfy}}" total="{{commentTotal}}"></comment-home>
+</view>

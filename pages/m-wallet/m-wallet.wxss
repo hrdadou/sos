@@ -1,0 +1,206 @@
+.container {
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.wallet_box {
+    width: 100%;
+    height: 476rpx;
+    background: url(https://img.rekoon.cn/intergal/search/my_wallet_bg@2x.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.wallet_cashdrawal {
+    width: 650rpx;
+    height: 269rpx;
+    padding-top: 112rpx;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wallet-text {
+    width: 100%;
+    line-height: 36rpx;
+    font-size: 24rpx;
+}
+
+.wallet-number {
+    width: 100%;
+    line-height: 60rpx;
+    font-size: 48rpx;
+}
+
+.wallet_money_box {
+    width: 650rpx;
+    margin: 0 auto;
+}
+
+.wallet_money_box-left,.wallet_money_box-right {
+    display: inline-block;
+    width: 325rpx;
+    height: 156rpx;
+    padding: 32rpx;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+}
+
+.wallet-money-text {
+    width: 100%;
+    line-height: 28rpx;
+    font-size: 22rpx;
+    color: #fff;
+}
+
+.wallet-money-number {
+    width: 100%;
+    line-height: 45rpx;
+    font-size: 36rpx;
+}
+
+.van-call {
+    padding: 14px 15px 14px 15px!important;
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+    line-height: 24px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+
+.van-cell__title {
+    display: table-cell;
+}
+
+.wallet_detail_btn {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+    margin-right: 22rpx;
+    background: url(//shop-img.rekoon.cn/img/wallet/my_wallet_ic_moneydetail.png) no-repeat;
+    background-size: 100% auto;
+    float: left;
+}
+
+.van-cell__right-icon {
+    width: 24rpx;
+    height: 24rpx;
+    background: url(//shop-img.rekoon.cn/icon/ic_go.png) no-repeat;
+    background-position: 100%;
+    filter: contrast(20%);
+    float: right;
+    margin-top: 8rpx;
+}
+
+.get-money {
+    background: #34343e;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+    width: 530rpx;
+    line-height: 98rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 32rpx;
+    border-radius: 10rpx;
+    margin: 0 auto;
+    margin-top: 73rpx;
+    margin-bottom: 30px;
+}
+
+.tixian-tips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    color: gray;
+}
+
+.tip-icon {
+    margin-right: 10rpx;
+    width: 26rpx;
+    height: 26rpx;
+    position: relative;
+    top: -2rpx;
+    display: block;
+}
+
+.open-model {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.close-model {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 80;
+    top: 0;
+}
+
+.image-box {
+    width: 590rpx;
+    height: 834rpx;
+    background: url(//shop-img.rekoon.cn/h512/h5_pop1.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: calc(50% - 417rpx);
+    left: calc(50% - 295rpx);
+    z-index: 99;
+}
+
+.up-button {
+    position: absolute;
+    width: 390rpx;
+    height: 100rpx;
+    left: 100rpx;
+    top: 670rpx;
+    background: 0 0;
+}
+
+.erweima {
+    width: 362rpx;
+    height: 362rpx;
+    background: url(https://shop-img.rekoon.cn/qrcode/h5shop.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 114rpx;
+    top: 256rpx;
+    z-index: 100;
+}
+
+.btn-wrapper {
+    width: 670rpx;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40rpx;
+}
+
+.btn-wrapper view {
+    width: 324rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 30rpx;
+    margin-top: 60rpx;
+}
+
+.btn-wrapper view:nth-child(1) {
+    background: rgba(52,52,62,1);
+    border-radius: 10rpx;
+}
+
+.btn-wrapper view:nth-child(2) {
+    background: rgba(255,255,255,1);
+    border-radius: 10rpx;
+    border: .8px solid rgba(86,86,86,1);
+    color: #565656;
+}

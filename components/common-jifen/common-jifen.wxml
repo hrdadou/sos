@@ -1,0 +1,25 @@
+<view class="goods-content">
+    <view class="title" wx:if="{{title}}">
+        <view class="imgs">
+            <image src="https://img.rekoon.cn/jifen/1.png"></image>
+        </view>
+        <view>{{title}}</view>
+        <view class="imgs">
+            <image src="https://img.rekoon.cn/jifen/2.png"></image>
+        </view>
+    </view>
+    <form-id class="goods-item" url="/pages/a-productDetail/a-productDetail?goodsId={{item.goods_id}}" wx:for="{{list}}" wx:key="{{index}}">
+        <view class="imgwrap">
+            <view class="sell-out" wx:if="{{item.rest==0}}"></view>
+            <image src="{{item.image+'-w224.h224'}}"></image>
+        </view>
+        <view class="text">{{item.title}}</view>
+        <view class="goods-info">
+            <view>
+                <image src="https://img.rekoon.cn/jifens/ic_rekoon.png"></image>
+            </view>
+            <view>{{item.integral}}</view>
+            <view>可兑换</view>
+        </view>
+    </form-id>
+</view>

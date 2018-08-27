@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    padding: 34rpx 40rpx;
+    background: #fff;
+}
+
+.header .images {
+    width: 180rpx;
+    height: 180rpx;
+}
+
+.header .images image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.evaluate {
+    width: 460rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 32rpx;
+    color: #262626;
+}
+
+.imgLine image {
+    width: 50rpx;
+    height: 50rpx;
+    display: inline-block;
+}
+
+.section {
+    background: #F8F8F8;
+    position: relative;
+    padding: 20rpx 30rpx;
+    height: 248rpx;
+}
+
+textarea {
+    background: #F8F8F8;
+    width: 100%;
+    height: 100%;
+    line-height: 37rpx;
+    font-size: 26rpx;
+    color: #636363;
+}
+
+.footer {
+    height: 180rpx;
+    padding: 35rpx 40rpx;
+    background: #FFFFFF;
+    margin-bottom: 40rpx;
+}
+
+.scroll {
+    width: 200vw;
+    height: 100%;
+}
+
+.chooseImg {
+    display: inline-block;
+    width: 180rpx;
+    height: 180rpx;
+    background: url('https://shop-img.rekoon.cn/img/buy_btn_uploading_mycomment.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.submit {
+    background: #ccc;
+    box-shadow: 0 4rpx 8rpx 0;
+    margin: 0 125rpx;
+    width: 500rpx;
+    height: 90rpx;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 90rpx;
+}
+
+.submit.height {
+    background: #34343E;
+}
+
+.span {
+    position: absolute;
+    bottom: 20rpx;
+    right: 30rpx;
+    font-size: 26rpx;
+    color: #999FA4;
+}
+
+.iamges-p {
+    width: 180rpx;
+    height: 180rpx;
+    display: inline-block;
+    margin-right: 10rpx;
+}

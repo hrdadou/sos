@@ -1,0 +1,247 @@
+.banner-top {
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0 24rpx 24rpx 24rpx;
+}
+
+.wrap.hidden {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.lbt {
+    padding-top: 1rpx;
+    box-sizing: border-box;
+}
+
+.banner-top .imgs {
+    width: 100%;
+    height: 420rpx;
+    background: #ccc;
+}
+
+.banner-top .imgs image {
+    width: 100%;
+    height: 100%;
+}
+
+.hasNones {
+    position: relative;
+}
+
+.hasNones .img {
+    width: 590rpx;
+    height: 420rpx;
+}
+
+.hasNones .image {
+    width: 44rpx;
+    height: 44rpx;
+    position: absolute;
+    right: 0;
+    top: -54rpx;
+    display: block;
+}
+
+.banner-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner-bottom .left {
+    margin: auto;
+}
+
+.banner-bottom .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    font-size: 24rpx;
+    color: #6A6A6A;
+    text-align: center;
+    letter-spacing: 0.61px;
+}
+
+.banner-bottom .right text {
+    width: 88%;
+    margin-left: 20rpx;
+}
+
+.banner-bottom .btn {
+    width: 180rpx;
+    height: 54rpx;
+    margin-top: 10rpx;
+    text-align: center;
+    line-height: 49rpx;
+    background: url('https://img.rekoon.cn/intergal/search/sign_in_btn@2x.png') no-repeat;
+    background-size: 100% 100%;
+    color: #fff!important;
+    font-size: 22rpx!important;
+}
+
+.banner-bottom .right image {
+    display: block;
+    margin: auto;
+    width: 106rpx;
+    height: 89rpx;
+    position: relative;
+    right: -17rpx;
+    margin-top: 17rpx;
+}
+
+.banner-bottom .left view:nth-child(1) {
+    width: 276rpx;
+    height: 28rpx;
+    margin: auto;
+    margin-top: 17rpx;
+}
+
+.banner-bottom .left view:nth-child(1) image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.banner-bottom .left view.bg {
+    position: relative;
+    margin: auto;
+    margin-top: 10rpx;
+    width: 662rpx;
+    height: 80rpx;
+    background: url('https://img.rekoon.cn/intergal/search/bg@2x%202.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.update-ask {
+    position: absolute;
+    width: 244rpx!important;
+    height: 77rpx!important;
+    background: url('https://img.rekoon.cn/integra/toast@2x.png');
+    background-size: 100% 100%;
+    left: 229rpx;
+    top: -77rpx;
+    font-size: 26rpx!important;
+    color: #fff!important;
+    line-height: 65rpx;
+    text-align: center;
+    margin-top: 0!important;
+}
+
+.remond {
+    display: block;
+    position: absolute;
+    top: -10rpx;
+    right: -10rpx;
+    width: 26rpx;
+    height: 26rpx;
+    background: url('https://img.rekoon.cn/integra/remind@2x.png');
+    background-size: 100% 100%;
+}
+
+.centerTotal {
+    width: 60%;
+    text-align: left;
+}
+
+#scrollFlag {
+    margin-top: 20rpx;
+}
+
+.pos {
+    position: fixed;
+    top: 0;
+    left: 24rpx;
+    z-index: 99;
+}
+
+.banner-bottom .left .bg {
+    margin-top: 10rpx;
+    padding: 16rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-bottom .left .bg image {
+    width: 54rpx;
+    height: 54rpx;
+    display: block;
+}
+
+.banner-bottom .left .bg view {
+    font-size: 30rpx;
+    color: #565656;
+    letter-spacing: 2.6rpx;
+}
+
+.banner-bottom .red {
+    color: #e14c49;
+}
+
+.common {
+    position: relative;
+    top: -17rpx;
+}
+
+.top-searchs {
+    width: 702rpx;
+    height: 70rpx;
+    background: #f7f7f7;
+    border-radius: 8rpx;
+    border: .8px solid rgba(239,239,239,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 26rpx;
+    color: #a1a1a1;
+    margin-top: 10rpx;
+}
+
+.top-searchs image {
+    width: 26rpx;
+    height: 29rpx;
+    margin-right: 14rpx;
+}
+
+.model-contents {
+    width: 702rpx;
+    margin: auto;
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-around;
+}
+
+.model-contents .model {
+    width: 100%;
+}
+
+.model-contents .model view {
+    width: 114rpx;
+    height: 114rpx;
+    margin: auto;
+}
+
+.model-contents .model view image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.model-contents .model text {
+    font-size: 26rpx;
+    color: #565656;
+    width: 100%;
+    display: block;
+    margin-top: 10rpx;
+    text-align: center;
+}
+
+.image {
+    width: 54rpx!important;
+    height: 54rpx!important;
+}

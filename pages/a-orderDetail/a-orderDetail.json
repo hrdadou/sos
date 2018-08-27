@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "订单详情",
+    "usingComponents": {
+        "contact-button": "/components/contact-button/contact-button",
+        "pop-model": "/components/pop-model/pop-model",
+        "loads": "/components/loads/loads"
+    }
+}

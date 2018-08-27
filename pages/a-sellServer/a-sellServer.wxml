@@ -1,0 +1,7 @@
+<view class="img">
+    <image mode="widthFix" src="{{topUrl}}"></image>
+</view>
+<view class="img">
+    <image mode="widthFix" src="{{bottomUrl}}"></image>
+    <view bindtap="tosell" class="sell">立即保卖</view>
+</view>

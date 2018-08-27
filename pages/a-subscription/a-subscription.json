@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "到货提醒",
+    "usingComponents": {
+        "loads": "/components/loads/loads"
+    }
+}

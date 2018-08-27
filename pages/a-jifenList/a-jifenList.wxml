@@ -1,0 +1,19 @@
+<view class="wrapper">
+    <is-empty show bindclick="click" wx:if="{{goodsList.length==0}}"></is-empty>
+    <view bindtap="goDetail" class="list-item" data-orderid="{{item.orderId}}" wx:for="{{goodsList}}" wx:key="{{index}}">
+        <view class="goods-img">
+            <image src="{{'https://img.rekoon.cn'+item.image}}"></image>
+        </view>
+        <view class="item-info">
+            <view>{{item.title}}</view>
+            <view>{{item.content}}</view>
+            <view>
+                <image src="https://img.rekoon.cn/jifens/ic_rekoon.png"></image>
+                <view>{{item.integral}}</view>
+            </view>
+        </view>
+        <view class="status {{item.status==10?'grey':''}}">{{item.statusText}}</view>
+    </view>
+    <over loads="{{loads}}" pageFlag="{{pageFlag}}" wx:if="{{goodsList.length}}"></over>
+    <loads wx:if="{{loadReady}}"></loads>
+</view>

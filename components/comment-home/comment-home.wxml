@@ -1,0 +1,54 @@
+<view class="wrapper {{buy?'':'sell'}}">
+    <view class="h1 tit">
+        <view class="p main-title">{{title.name}}</view>
+        <view class="subtitle">{{title.en}}</view>
+    </view>
+    <view class="multiple-evaluation">
+        <view class="p1">
+            <view class="span1">满意率</view>
+            <view class="span2">{{satisfy}}%</view>
+        </view>
+        <view bindtap="allComment" class="p2">
+            <view class="span1">全部</view>
+            <view class="span2">{{total}}</view>
+            <view class="span3"></view>
+        </view>
+    </view>
+    <scroll-view scrollX class="scroll-view">
+        <view class="scroll-main">
+            <view class="view-item" wx:for="{{lists}}" wx:key="{{index}}">
+                <view class="user-item">
+                    <view class="user-avator">
+                        <image src="{{item.userImg}}"></image>
+                    </view>
+                    <view class="user-comment">
+                        <view class="phone">
+                            <view>{{item.phone}}</view>
+                            <view class="dates">{{item.time}}</view>
+                        </view>
+                        <view class="phone-next">
+                            <view class="pin-text">评分</view>
+                            <view class="star">
+                                <image src="https://shop-img.rekoon.cn/img/sold_home_speak_star_choose.png" wx:for="{{item.evl}}" wx:key="item"></image>
+                                <image src="https://shop-img.rekoon.cn/img/sold_home_speak_star_notchoose.png" wx:for="{{item.evl_}}" wx:key="item"></image>
+                            </view>
+                            <view class="has-images" wx:if="{{item.images.length}}">有图</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pinglun">
+          {{item.content}}
+        </view>
+                <view class="comment-bottom">
+                    <view class="model-names">
+            {{item.modelName||item.type}} [{{item.condition}}]
+          </view>
+                    <view class="model-right">
+                        <view>{{buy?'成交价':'收入:'}}</view>
+                        <view>￥{{item.price}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

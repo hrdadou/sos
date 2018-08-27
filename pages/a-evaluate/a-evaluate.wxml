@@ -1,0 +1,28 @@
+<view class="wrapper">
+    <view class="header">
+        <view class="images" wx:if="{{orderInfo&&orderInfo.product&&orderInfo.product.length}}">
+            <image src="{{orderInfo.product[0].imgUrl}}"></image>
+        </view>
+        <view class="evaluate">
+            <view>评分</view>
+            <view class="imgLine">
+                <image bindtap="showStar" data-index="{{index}}" src="{{item}}" wx:for="{{picArray}}" wx:key="{{index}}"></image>
+            </view>
+        </view>
+    </view>
+    <view class="section">
+        <textarea id="Text" maxlength="60" placeholder="输入不超过60字的文字评价(不少于3字)"></textarea>
+        <view class="span">0/60</view>
+    </view>
+    <view class="footer">
+        <scroll-view>
+            <view class="scroll">
+                <image class="iamges-p" src="{{item}}" wx:for="{{images}}" wx:key="index"></image>
+                <view bindtap="chooseImgs" class="chooseImg"></view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="submit">
+    提交
+  </view>
+</view>

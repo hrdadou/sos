@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "开通京东白条",
+    "usingComponents": {
+        "loads": "/components/loads/loads"
+    }
+}

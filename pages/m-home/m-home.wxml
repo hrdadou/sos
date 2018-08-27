@@ -1,0 +1,53 @@
+<view class="container">
+    <view class="mine_banner">
+        <view class="userinfo">
+            <button bindgetuserinfo="getUserInfo" class="get-top" openType="getUserInfo" wx:if="{{!hasUserInfo&&canIUse}}"> 获取头像昵称 </button>
+            <block wx:else>
+                <image backgroundSize="cover" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            </block>
+        </view>
+    </view>
+    <view class="mine-con">
+        <navigator class="mine-deal" hoverClass="navigator-hover" url="/pages/s-order-list/s-order-list">
+            <view class="deal-img deal-img-in"></view>
+            <view class="deal-text">我卖的</view>
+        </navigator>
+        <view class="center-line"></view>
+        <navigator class="mine-deal" hoverClass="navigator-hover" url="/pages/o-list/o-list">
+            <view class="deal-img deal-img-out"></view>
+            <view class="deal-text">我买的</view>
+        </navigator>
+    </view>
+    <view class="mine-pag">
+        <navigator class="mine-a" hoverClass="navigator-hover" url="/pages/m-wallet/m-wallet">
+            <image class="a-icon" src="//shop-img.rekoon.cn/user/my_wallet_ic1.png"></image>
+      钱包
+      <view class="icon-text">
+        可提现金额
+        <text class="icon-text-money">¥{{balanceInfo}}</text>
+            </view>
+        </navigator>
+        <navigator class="mine-a" hoverClass="navigator-hover" url="/pages/m-red-package/m-red-package">
+            <image class="a-icon" src="//shop-img.rekoon.cn/icons/my_lottery_ic.png"></image>
+      红包
+      <view class="icon-text">
+        可用红包
+        <text class="icon-text-money">{{priceTotal}}</text>
+        个
+      </view>
+        </navigator>
+        <view catchtap="call" class="mine-a" hoverClass="navigator-hover">
+            <image class="a-icon" src="//shop-img.rekoon.cn/user/my_service_ic1.png"></image>
+      客服
+      <view class="icon-text blue">
+        400-839-9097
+      </view>
+        </view>
+        <navigator class="mine-a mine-a-noborder" hoverClass="navigator-hover" url="/pages/m-setting/m-setting">
+            <image class="a-icon" src="//shop-img.rekoon.cn/user/my_setting_ic1.png"></image>
+      设置
+      <view class="icon-text icon-set"></view>
+        </navigator>
+    </view>
+</view>

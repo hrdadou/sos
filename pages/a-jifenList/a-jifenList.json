@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "我换的",
+    "usingComponents": {
+        "over": "/components/over/over",
+        "is-empty": "/components/is-empty/is-empty",
+        "loads": "/components/loads/loads"
+    }
+}

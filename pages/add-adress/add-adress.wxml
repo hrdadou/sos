@@ -1,0 +1,22 @@
+<view class="wrapper">
+    <view class="adress-item">
+        <view class="first">选择地区</view>
+        <view>
+            <picker bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" mode="multiSelector" range="{{objectMultiArray}}" rangeKey="name" value="{{multiIndex}}">
+                <view class="picker">
+          当前选择：{{objectMultiArray[0][ multiIndex[0] ].name}}，{{objectMultiArray[1][ multiIndex[1] ].name}}，{{objectMultiArray[2][ multiIndex[2] ].name}}
+        </view>
+            </picker>
+        </view>
+    </view>
+    <view class="adress-item">
+        <view class="first">选择地区</view>
+        <view>
+            <picker bindchange="bindRegionChange" customItem="{{customItem}}" mode="region" value="{{region}}">
+                <view class="picker">
+          当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+            </picker>
+        </view>
+    </view>
+</view>

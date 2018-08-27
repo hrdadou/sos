@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "充值",
+    "usingComponents": {
+        "pop-model": "/components/pop-model/pop-model",
+        "loads": "/components/loads/loads"
+    }
+}

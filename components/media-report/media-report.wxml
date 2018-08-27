@@ -1,0 +1,16 @@
+<view class="media">
+    <view class="header">
+        <view class="title">媒体报道</view>
+        <view class="e-title">Media Report</view>
+    </view>
+    <view class="news">
+        <view class="left">
+            <image src="https://shop-img.rekoon.cn/user/sold_home_brand1.png"></image>
+            <text>焕熊CEO张家炜:担保直卖服务创新二手数码电商新模式</text>
+        </view>
+        <view class="right">
+            <image src="https://shop-img.rekoon.cn/user/sold_home_brand2.png"></image>
+            <text>焕醒闲置新价值！焕熊在做一件有意义的事</text>
+        </view>
+    </view>
+</view>

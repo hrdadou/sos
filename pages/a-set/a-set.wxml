@@ -1,0 +1,26 @@
+<view class="mobile">
+    <view class="mobile_lfet">
+        <view>手机号绑定</view>
+        <view>{{userInfo.phone}}</view>
+    </view>
+    <view class="change">
+        <view>更换</view>
+        <view class="arrow"></view>
+    </view>
+</view>
+<view class="address">
+    <view class="address_left">地址管理</view>
+    <view class="address_right"></view>
+</view>
+<view class="invitation">
+    <view class="invitation_left">邀请码</view>
+    <view class="invitation_right"></view>
+</view>
+<view class="opinion">
+    <view class="opinion_left">意见反馈</view>
+    <view class="opinion_right"></view>
+</view>
+<view class="about">
+    <view class="about_left">关于焕熊</view>
+    <view class="about_right"></view>
+</view>

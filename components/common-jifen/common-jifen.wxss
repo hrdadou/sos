@@ -1,0 +1,235 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.nowSignBtn {
+    width: 336rpx;
+    height: 120rpx;
+    background: url('https://img.rekoon.cn/jifen/sign_in_btn.png') no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    line-height: 92rpx;
+    text-align: center;
+    font-size: 30rpx;
+    margin: auto;
+    margin-top: 98rpx;
+    margin-bottom: 20rpx;
+}
+
+.tipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    color: #808080;
+}
+
+.tipe view:last-child {
+    width: 22rpx;
+    height: 22rpx;
+    margin-left: 10rpx;
+}
+
+.tipe view:last-child image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tops {
+    border-top: 1rpx solid #fff;
+    background: #fff;
+    padding-bottom: 10rpx;
+}
+
+.goods-content {
+    border-top: 1px solid #fff;
+    margin: auto;
+    background: #fff;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+    width: 702rpx;
+    padding-bottom: 20rpx;
+    padding-left: 20rpx;
+}
+
+.goods-content .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+    font-size: 30rpx;
+    margin: 20rpx;
+}
+
+.goods-content .title view {
+    margin: 10rpx;
+}
+
+.goods-content .title .imgs {
+    width: 66rpx;
+    height: 17rpx;
+}
+
+.details view {
+    margin-right: 20rpx;
+}
+
+.details {
+    font-size: 24rpx;
+    color: #808080;
+    text-align: right;
+    line-height: 46rpx;
+    background: url('https://img.rekoon.cn/jifen/sign_btn_activity.png') no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #E7E7E7;
+    width: 124rpx;
+    height: 46rpx;
+    position: fixed;
+    top: 37rpx;
+    right: 0;
+    z-index: 999;
+    border-radius: 92px 0 0 92px;
+}
+
+.isSigin {
+    text-align: center;
+}
+
+.isSigin view:first-child {
+    font-size: 32rpx;
+    margin-top: 15px;
+    color: #565656;
+}
+
+.isSigin view:nth-child(2) {
+    font-size: 24rpx;
+    margin-top: 15rpx;
+    color: #808080;
+}
+
+.isSigin .nowSignBtn {
+    margin-top: 20rpx;
+}
+
+.goods-content .title .imgs image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.goods-item {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 20rpx;
+    width: 321rpx;
+    min-height: 50rpx;
+    border: .8px solid #F1F1F1;
+    border-radius: 8px;
+    margin-top: 21rpx;
+    display: inline-block;
+    margin-right: 20rpx;
+}
+
+.sell-out {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: block;
+    background: url('https://img.rekoon.cn/integra/buy_pic_soldout.png') no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+}
+
+.imgwrap {
+    width: 220rpx;
+    height: 220rpx;
+    margin: auto;
+    margin-top: 22rpx;
+    position: relative;
+}
+
+.imgwrap image {
+    width: 100%;
+    height: 100%;
+}
+
+.goods-item .text {
+    height: 80rpx;
+    overflow: hidden;
+    width: 82%;
+    margin: auto;
+    margin-top: 15rpx;
+    margin-bottom: 10rpx;
+    font-size: 28rpx;
+    color: #565656;
+    text-align: center;
+}
+
+.goods-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goods-info view:first-child {
+    width: 34rpx;
+    height: 34rpx;
+    border-radius: 30rpx;
+}
+
+.goods-info view:first-child image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.goods-info view:nth-child(2) {
+    font-size: 34rpx;
+    color: #F5655B;
+}
+
+.goods-info view:nth-child(3) {
+    font-size: 24rpx;
+    color: #A1A1A1;
+}
+
+.goods-info view {
+    margin: 0 5rpx 20rpx 0;
+}
+
+.jifen-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.jifen-line view:first-child {
+    width: 32rpx;
+    height: 32rpx;
+    margin: 5rpx 10rpx 5rpx 20rpx;
+}
+
+.jifen-line view:last-child {
+    font-size: 24rpx;
+    color: #808080;
+    letter-spacing: 0;
+}
+
+.jifen-line view:first-child image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.loads {
+    width: 100%;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #565656;
+}

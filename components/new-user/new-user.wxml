@@ -1,0 +1,11 @@
+<pop-model id="modelPop" popType="center">
+    <view class="hasNone">
+        <image bindtap="closePop" src="https://img.rekoon.cn/jifens/close.png"></image>
+        <view class="text-none">
+      恭喜获得100焕熊章!
+    </view>
+        <view bindtap="closePop" class="button">
+      我知道了
+    </view>
+    </view>
+</pop-model>

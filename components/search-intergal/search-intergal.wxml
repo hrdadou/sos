@@ -1,0 +1,39 @@
+<view catchtouchmove="preventTouchMove" class="search-wrap">
+    <view bindtap="showModelContent" class="view">
+        <text class="{{showCurrentModel?'active':''}}">{{currentModelName}}</text>
+        <image src="{{showCurrentModel?'https://img.rekoon.cn/intergal/search/caidan@2x.png':'https://img.rekoon.cn/intergal/search/caidan.png'}}"></image>
+    </view>
+    <view bindtap="onSalesTop" class="view {{sales=='desc'?'active':''}}">销量</view>
+    <view bindtap="onIntergalTop" class="view {{intergalNums!=''?'active':''}}">
+        <text>章数</text>
+        <image class="intergal-nums" src="https://img.rekoon.cn/intergal/search/{{intergalIconUrlStatus}}.png"></image>
+    </view>
+    <view bindtap="onScreenClick" class="view">
+        <text class="{{showScreening?'active':''}}">筛选</text>
+        <image class="screen" src="{{showScreening?'https://img.rekoon.cn/intergal/search/saixuanh.png':'https://img.rekoon.cn/intergal/search/shaixuan.png'}}"></image>
+    </view>
+    <view bindtap="closeAllModal" catchtouchmove="preventTouchMove" class="modal-wrap" wx:if="{{showCurrentModel||showScreening}}"></view>
+    <view catchtouchmove="preventTouchMove" class="model" wx:if="{{showCurrentModel}}">
+        <scroll-view scrollY catchtouchmove="preventTouchMove" style="height: 520rpx">
+            <view class="type-list">
+                <view bindtap="modelClick" class="{{item.id==currentModelId?'active':''}}" data-id="{{item.id}}" data-name="{{item.name}}" wx:for="{{typeList}}" wx:key="{{index}}">{{item.name}}</view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="model" wx:if="{{showScreening}}">
+        <view class="model-content">
+            <view class="goods-title">商品详情</view>
+            <view bindtap="selectGoodsStatusClick" class="select-item {{selectGoodsStatus==item.status?'active':''}}" data-status="{{item.status}}" wx:for="{{goodsScreenStatus}}" wx:key="{{index}}">{{item.name}}</view>
+            <view class="goods-title">章数区间</view>
+            <view class="inputer">
+                <input bindinput="onchangeStart" placeholder="最低章数" placeholderClass="input" type="number" value="{{startIntergal}}"></input>
+                <view class="line"></view>
+                <input bindinput="onchangeEnd" placeholder="最高章数" placeholderClass="input" type="number" value="{{endIntergal}}"></input>
+            </view>
+        </view>
+        <view class="buttons">
+            <view bindtap="resetForm">重置</view>
+            <view bindtap="submitThis">确定</view>
+        </view>
+    </view>
+</view>

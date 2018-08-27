@@ -1,0 +1,19 @@
+.sell {
+    background: #34343e;
+    color: #fff;
+    width: 375rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 30rpx;
+    margin: 95rpx auto;
+    text-align: center;
+    border-radius: 10rpx;
+}
+
+.img {
+    width: 100%;
+}
+
+image {
+    width: 100%;
+}

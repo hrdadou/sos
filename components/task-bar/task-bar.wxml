@@ -1,0 +1,8 @@
+<view class="title-select">
+    <scroll-view scrollWithAnimation scrollX scrollLeft="{{scrollLeft}}">
+        <view class="wrapper-view" style="width: {{maxWidth}}px">
+            <view bindtap="selectItItem" class="item {{showItem==item.id?'active':''}}" data-id="{{item.id}}" data-index="{{index}}" wx:for="{{title}}" wx:key="{{index}}">{{item.name}}</view>
+            <view class="moveLine" style="left: {{offsetLeft+itemLeft}}px; width: {{lineWidth}}px"></view>
+        </view>
+    </scroll-view>
+</view>

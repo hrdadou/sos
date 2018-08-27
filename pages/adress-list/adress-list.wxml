@@ -1,0 +1,19 @@
+<view class="wrapper">
+    <view class="adress-item" wx:for="{{adressList}}" wx:key="{{index}}">
+        <view bindtap="setAdressDefault" data-adressid="{{item.addressId}}" data-index="{{index}}">
+            <view>
+                <image src="{{item.isDefault!=1?'https://img.rekoon.cn/collage/bgs/pc/buy_ic_choose_n1.png':'https://img.rekoon.cn/collage/bgs/pc/buy_ic_choose_h1.png'}}"></image>
+            </view>
+        </view>
+        <view bindtap="setAdressDefault" data-adressid="{{item.addressId}}" data-index="{{index}}">
+            <view>{{item.name}}，{{item.phone}}</view>
+            <view>收货地址: {{item.provinceName}}{{item.cityName}}{{item.countyName}}{{item.details}}</view>
+        </view>
+        <view bindtap="setAdress" data-addressid="{{item.addressId}}">
+      编辑
+    </view>
+    </view>
+    <view bindtap="addAdress" class="add-adress">
+    新增收货地址
+  </view>
+</view>

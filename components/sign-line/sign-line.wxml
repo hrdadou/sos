@@ -1,0 +1,18 @@
+<view class="wrapper">
+    <view class="asing-wraper">
+        <view class="asigin-item {{siginData.asOfTime>=item.time?'active':''}}" wx:for="{{siginData.siginList}}" wx:key="index">
+            <view class="text">
+                <view class="nums {{item.show_text>10?'height':''}}">
+                    <view wx:if="{{item.show_text>10}}">最高{{item.show_text}}</view>
+                    <view wx:else>+{{item.show_text}}</view>
+                </view>
+                <view class="ends {{siginData.asOfTime==item.time?'height':''}}"></view>
+                <view class="today {{siginData.today==item.time?'active':''}}">
+                    <view wx:if="{{siginData.today==item.time}}">今天</view>
+                    <view wx:else>{{item.time}}天</view>
+                </view>
+            </view>
+            <view class="line" wx:if="{{index!=0}}"></view>
+        </view>
+    </view>
+</view>

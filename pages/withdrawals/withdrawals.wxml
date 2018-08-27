@@ -1,0 +1,15 @@
+<view class="box">
+    <view class="box-top">
+        <view>到账微信号 :<text></text>
+        </view>
+    </view>
+    <view class="box-bottom">
+        <view>提现金额</view>
+        <view>￥</view>
+        <view>
+            <input></input>
+        </view>
+    </view>
+    <view>可提现余额为{{1}}元， <view>全部提现</view>
+    </view>
+</view>

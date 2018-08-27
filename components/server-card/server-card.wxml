@@ -1,0 +1,38 @@
+<view>
+    <view class="ul hidden min-auto {{show?'active':''}}">
+        <view bindtap="_posclick" class="poscl"></view>
+        <view bindtap="_posclick" class="clocs">
+            <image src="https://shop-img.rekoon.cn/img/buy_ic_close_checkstand.png"></image>
+        </view>
+        <view class="ul-li">
+            <view class="div">
+                <image class="img img-left" src="https://shop-img.rekoon.cn/img/detail_zhuangshi.png"></image>
+                <view class="h1">服务保障</view>
+                <image alt="" class="img-right" src="https://shop-img.rekoon.cn/img/detail_zhuangshi1.png"></image>
+            </view>
+        </view>
+        <view class="ol server">
+            <view class="div">
+                <view class="h3">
+                    <image src="https://img.rekoon.cn/detail_safeguard_ic_7.png"></image>7天可退</view>
+                <view class="p">自收到商品起7天内，可因与质检报告描述不符退货</view>
+            </view>
+            <view class="div">
+                <view class="h3">
+                    <image src="https://img.rekoon.cn/detail_safeguard_ic_180.png"></image>360天质保</view>
+                <view class="p">自收到商品起360天内，可为非人为功能性问题免费维修</view>
+            </view>
+            <view class="div">
+                <view class="h3">
+                    <image src="https://img.rekoon.cn/detail_safeguard_ic_profession.png"></image>权威质检</view>
+                <view class="p">每台商品均由焕熊专业工程师质检认证，保障品质</view>
+            </view>
+            <view class="div">
+                <view class="h3">
+                    <image src="https://img.rekoon.cn/detail_safeguard_ic_sf.png"></image>顺丰包邮</view>
+                <view class="p">每天下午6点前下单将在当日发货，顺丰免费送达</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view bindtap="_posclick" class="pos {{show?'active':''}}"></view>

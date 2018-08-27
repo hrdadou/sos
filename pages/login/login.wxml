@@ -1,0 +1,11 @@
+<view>
+    <image src="https://img.rekoon.cn/newHome/pic_502.png"></image>
+    <view class="title">焕熊</view>
+    <view class="line"></view>
+    <view class="quern">请确认以下授权信息</view>
+    <view class="info">·获取你的信息（头像，信息等）</view>
+    <button bindgetuserinfo="getUserInfo" class="get-top" openType="getUserInfo"> 授权 </button>
+</view>
+<view wx:if="{{hideFMCanvas!=undefined&&!hideFMCanvas}}">
+    <canvas canvasId="tdcanvas" style="position: absolute; top: 200vh"></canvas>
+</view>

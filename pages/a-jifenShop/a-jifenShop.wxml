@@ -1,0 +1,83 @@
+<view class="wrap {{hidden?'hidden':''}}">
+    <view bindtap="getB" class="lbt">
+        <view bindtap="toSearch" class="top-searchs">
+            <image src="https://img.rekoon.cn/intergal/search/Shape@2x.png"></image>
+            <text>搜索0元好物</text>
+        </view>
+        <swiper autoplay circular bindchange="_change" class="swiper" current="{{showIndex}}" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+            <swiper-item class="swiper-item" wx:for="{{imagesUrl_buy}}" wx:key="{{index}}">
+                <view class="slide-image">
+                    <image bindtap="clickImg" data-postUrl="{{item.mini_link}}" src="{{item.image}}"></image>
+                </view>
+            </swiper-item>
+        </swiper>
+        <view class="indicators" wx:if="{{imagesUrl_buy.length}}">
+            <view class="i {{index===showIndex?'active':''}}" wx:for="{{imagesUrl_buy}}" wx:key="{{index}}"></view>
+        </view>
+    </view>
+    <view class="banner-top">
+        <view class="banner-bottom">
+            <view class="left">
+                <view>
+                    <image src="https://img.rekoon.cn/integral/new@2x.png"></image>
+                </view>
+                <form-id bindfevent="getMoreJifen">
+                    <view class="bg">
+                        <view class="update-ask" wx:if="{{hasChangeToast}}">任务有更新哦～</view>
+                        <text class="remond" wx:if="{{hasChangeTask==1}}"></text>
+                        <image class="image" src="https://img.rekoon.cn/jifens/ic_rekoon.png"></image>
+                        <view class="view centerTotal">你有焕熊章 <text class="red">{{totalJifen}}</text> 枚</view>
+                        <view class="btn">做任务赚更多</view>
+                    </view>
+                </form-id>
+            </view>
+        </view>
+        <view class="model-contents">
+            <form-id bindfevent="modelPage" class="model" data-model="0">
+                <view>
+                    <image src="https://img.rekoon.cn/intergal/search/chuchujie.png"></image>
+                </view>
+                <text>楚楚街优选</text>
+            </form-id>
+            <form-id bindfevent="modelPage" class="model" data-model="1">
+                <view>
+                    <image src="https://img.rekoon.cn/intergal/search/ic3%20copy%203.png"></image>
+                </view>
+                <text>生活专区</text>
+            </form-id>
+            <form-id bindfevent="modelPage" class="model" data-model="2">
+                <view>
+                    <image src="https://img.rekoon.cn/intergal/search/ic2.png"></image>
+                </view>
+                <text>闲置换钱</text>
+            </form-id>
+            <form-id bindfevent="modelPage" class="model" data-model="3">
+                <view>
+                    <image src="https://img.rekoon.cn/intergal/search/ic_android%20copy@2x%202.png"></image>
+                </view>
+                <text>签到</text>
+            </form-id>
+        </view>
+    </view>
+    <view id="scrollFlag">
+        <search-intergal bindchange="selectChange" class="{{pos?'pos':''}}" id="select" scrolls="" typeList="{{titleList}}"></search-intergal>
+    </view>
+    <view style="height:98rpx" wx:if="{{pos}}"></view>
+    <view style="height: {{pos?'100vh':'90vh'}}">
+        <common-jifen class="common" goodsList="{{goodsList}}" wx:if="{{goodsList.length}}"></common-jifen>
+        <over loads="{{loads}}" pageFlag="{{pageFlag}}" wx:if="{{showLoading&&!empty}}"></over>
+        <is-empty position text="没搜到你想要的好物哦～" url="https://img.rekoon.cn/intergal/search/search_null.png" wx:if="{{empty}}"></is-empty>
+    </view>
+    <view style="height: 30rpx"></view>
+    <loads wx:if="{{showLoad}}"></loads>
+    <new-user></new-user>
+    <pop-model id="modelPopInvite" popType="center">
+        <view class="hasNones">
+            <image bindtap="closeInvite" class="image" src="https://img.rekoon.cn/jifens/close.png"></image>
+            <image bindtap="goInviteInterge" class="img" src="https://img.rekoon.cn/integra/jd_version/mp/pop.png"></image>
+        </view>
+    </pop-model>
+</view>
+<view wx:if="{{hideFMCanvas!=undefined&&!hideFMCanvas}}">
+    <canvas canvasId="tdcanvas" style="margin-top:200rpx"></canvas>
+</view>

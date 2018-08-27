@@ -1,0 +1,160 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 88rpx;
+    background: #fff;
+    margin-top: 12rpx;
+    line-height: 88rpx;
+}
+
+.header_left {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16rpx;
+}
+
+.header_right {
+    display: flex;
+    justify-content: space-between;
+    font-size: 26rpx;
+    color: #6a6a6a;
+    margin-right: 16rpx;
+}
+
+.header_left .left {
+    font-size: 26rpx;
+    color: #6a6a6a;
+}
+
+.header_left .satisfaction {
+    color: #ff6432;
+    font-size: 46rpx;
+    margin-left: 16rpx;
+}
+
+.commentList {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.top {
+    display: flex;
+}
+
+.top_left {
+    width: 120rpx;
+    margin-right: 16rpx;
+}
+
+.img image {
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 50%;
+    margin-left: 20rpx;
+    margin-top: 25rpx;
+}
+
+.right {
+    width: 100%;
+    border-bottom: 1rpx solid #E5E7EE;
+    margin-top: 20rpx;
+}
+
+.comment {
+    width: 590rpx;
+    margin-bottom: 10rpx;
+    line-height: 37rpx;
+    font-size: 26rpx;
+    color: #6a6a6a;
+    margin-top: 30rpx;
+}
+
+.right_bottom {
+    width: 100%;
+    display: flex;
+    margin: 14rpx 0 40rpx 0;
+    height: 12rpx;
+}
+
+.right_bottom view {
+    font-size: 26rpx;
+    color: #6a6a6a;
+}
+
+.phone_name {
+    height: 30rpx;
+    max-width: 228rpx;
+    overflow: hidden;
+    margin-right: 20rpx;
+    color: #a1a1a1;
+}
+
+.price {
+    margin-left: 50rpx;
+}
+
+.price text {
+    color: #ff6432;
+}
+
+.star {
+    margin-bottom: 20rpx;
+    display: flex;
+    height: 21rpx;
+}
+
+.star view {
+    width: 21rpx;
+    height: 21rpx;
+    margin-right: 10rpx;
+}
+
+.star view image {
+    width: 21rpx;
+    height: 21rpx;
+}
+
+.more {
+    width: 100%;
+    background: #fff;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #999FA4;
+}
+
+.right_top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rpx;
+    height: 21rpx;
+}
+
+.right_phone {
+    font-size: 26rpx;
+    color: #6d6d6d;
+}
+
+.right_date {
+    font-size: 26rpx;
+    color: #a1a1a1;
+    margin-right: 44rpx;
+}
+
+.images-wrapper {
+    width: 100%;
+}
+
+.images-wrapper image {
+    width: 180rpx;
+    height: 180rpx;
+    display: inline-block;
+    margin: 10rpx 20rpx 0 0;
+}
+
+.images-wrapper image:nth-child(3n) {
+    margin: 10rpx 0 0 0;
+}

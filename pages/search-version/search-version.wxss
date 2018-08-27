@@ -1,0 +1,276 @@
+.type-select {
+    width: 100vw;
+    height: 100rpx;
+    display: flex;
+    background: #fff;
+    justify-content: space-around;
+}
+
+.type-select view {
+    width: 100%;
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    color: #565656;
+}
+
+.type-select view.active {
+    color: #6d84dd;
+}
+
+.move-wrap {
+    height: 8rpx;
+    width: 100vw;
+    background: #fff;
+}
+
+.move-wrap view {
+    height: 8rpx;
+    width: 18vw;
+    background: #6d84dd;
+    margin-left: 8vw;
+    transition: all .2s;
+}
+
+.move-wrap view.two {
+    margin-left: 41.3vw;
+}
+
+.move-wrap view.three {
+    margin-left: 74.5vw;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.select-content {
+    flex: 1;
+    display: flex;
+    position: fixed;
+    top: 195rpx;
+    bottom: 0;
+    width: 100%;
+}
+
+scroll-view {
+    height: 100%;
+}
+
+.left {
+    width: 210rpx;
+    background: #f6f6f6;
+}
+
+.left-item {
+    width: 100%;
+    height: 150rpx;
+    margin-top: -10rpx;
+    border-bottom: 1rpx solid #dcdcdc;
+}
+
+.left-item.active {
+    background: #fff;
+}
+
+.left-item .img-w {
+    width: 97.5rpx;
+    height: 97.5rpx;
+    margin: auto;
+    margin-top: 10rpx;
+}
+
+.left-item .img-w image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.left-item .model-name {
+    font-size: 26rpx;
+    color: #62626c;
+    text-align: center;
+}
+
+.right {
+    flex: 1;
+    background: #fff;
+}
+
+.right-line {
+    height: 100rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-line:active {
+    background: #f6f6f6;
+}
+
+.right-line:nth-child(1) .icon {
+    background: #eb6f69;
+}
+
+.right-line:nth-child(2) .icon {
+    background: #f1ce85;
+}
+
+.right-line:nth-child(3) .icon {
+    background: #85aef1;
+}
+
+.right-line .icon {
+    text-align: center;
+    line-height: 34rpx;
+    width: 34rpx;
+    height: 34rpx;
+    background: #bfc8d9;
+    font-size: 21rpx;
+    color: #fff;
+}
+
+.right-item {
+    height: 100%;
+    width: 86%;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #f5f5f5;
+    overflow: hidden;
+    color: #565656;
+    font-size: 30rpx;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.topSearch {
+    height: 88rpx;
+    width: 100vw;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.serch-btn {
+    position: relative;
+    background: #eff1f2;
+    border-radius: 50rpx;
+    width: 535rpx;
+    height: 70rpx;
+    display: flex;
+    align-items: center;
+}
+
+.serch-btn .img {
+    width: 27rpx;
+    margin: 0 20rpx 0 40rpx;
+    height: 30rpx;
+}
+
+.serch-btn input {
+    font-size: 26rpx;
+    color: #9b9b9b;
+}
+
+.serch-btn .img image {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.cancel {
+    position: absolute;
+    top: 0rpx;
+    right: 10rpx;
+    font-size: 26rpx;
+    color: #34343e;
+    width: 100rpx;
+    height: 88rpx;
+    line-height: 70rpx;
+    text-align: center;
+}
+
+.serch-content {
+    width: 100%;
+    height: auto;
+    padding: 0 40rpx 10rpx;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+
+.hot-serch {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    color: #868686;
+}
+
+.hot-item {
+    display: inline-block;
+    padding: 7.5rpx 27rpx;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+    font-size: 28rpx;
+    color: gray;
+    background: #fafafa;
+}
+
+.search-histoary {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    color: #868686;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+
+.clear {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #73739b;
+    z-index: 999;
+}
+
+.searching scroll-view {
+    margin-top: 88rpx;
+    height: 70vh;
+    background: #fff;
+}
+
+.searching view {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-indent: 100rpx;
+    border-bottom: 1rpx solid #f5f5f5;
+    color: gray;
+    font-size: 30rpx;
+}
+
+.nodata {
+    width: 100%;
+    height: 100%;
+    line-height: 1500rpx;
+    text-align: center;
+    font-size: 30rpx;
+    position: absolute;
+    left: 0;
+    top: 100rpx;
+    background: url(https://shop-img.rekoon.cn/img/empty_search.png) no-repeat center 40%;
+    background-size: 35% auto;
+}
+
+.hist {
+    height: 40vh;
+}

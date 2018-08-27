@@ -1,0 +1,23 @@
+<view bindtap="toDetail" class="item" wx:if="lists.length > 0" wx:for="{{lists}}" wx:key="{{index}}">
+    <view class="top">
+        <view class="icon"></view>
+        <view class="num">直卖单号：{{item.listSn}}</view>
+        <view class="status">{{item.statusName}}</view>
+    </view>
+    <view class="middle">
+        <view class="middle_left">
+            <image src="{{item.imgUrl}}"></image>
+        </view>
+        <view class="middle_right">
+            <view class="name">{{item.title}}</view>
+            <view class="price">合计收入 <text>￥{{item.sellerPrice}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view></view>
+        <view catchtap="canclOrder" class="btn">
+   取消订单
+  </view>
+    </view>
+</view>

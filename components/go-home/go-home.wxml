@@ -1,0 +1,3 @@
+<view bindtap="gohome" class="home">
+    <image src="https://img.rekoon.cn/ic_backhome.png"></image>
+</view>

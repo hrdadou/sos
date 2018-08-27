@@ -1,0 +1,93 @@
+<view>
+    <view class="collage-wrap" wx:if="{{showCollage}}">
+        <view bindtap="hideMsk" class="model-collage" wx:if="{{showMask}}">
+            <view class="model-wrapper">
+                <view bindtap="hideMsk" class="close">
+                    <image src="//shop-img.rekoon.cn/icon/ic_close.png"></image>
+                </view>
+                <image src="//img.rekoon.cn/collage/bgs/my_redpage_bg_money.png"></image>
+            </view>
+        </view>
+        <view bindtap="showMsks" class="active-infos"></view>
+        <view class="collage-top">
+            <image src="//img.rekoon.cn/collage/bgs/activity_detail_banner_f.png" style="height: 353rpx" wx:if="{{teamInfo.spellGroupStatus=='3'&&teamInfo.price!=''}}"></image>
+            <image src="//img.rekoon.cn/collage/bgs/activity_detail_banner.png" wx:else></image>
+        </view>
+        <view class="top-down-arrow animate-bounce-down" wx:if="{{teamInfo.spellGroupStatus!='3'}}">
+            <image src="//img.rekoon.cn/collage/icon/ic_arrows.png"></image>
+        </view>
+        <view class="text-box" wx:if="{{teamInfo.spellGroupStatus=='3'&&teamInfo.price!=''}}">
+            <view class="h1">拆到 <view class="span" style="font-size: 120rpx">{{teamInfo.price}}</view> 元现金</view>
+            <view class="p">
+                <view class="span">{{dateSeven}}</view>前使用</view>
+            <button bindtap="buttonClick" class="{{item.class}}" data-index="{{index}}" data-item-statue="{{teamInfo.status}}" openType="{{item.event=='invite'?'share':''}}" wx:if="{{!isNewUser}}" wx:for="{{collageType[teamInfo.status]}}" wx:key="{{index}}">{{item.text}}</button>
+        </view>
+        <view class="collage-box {{classes}}" wx:else>
+            <view class="loginbutton" wx:if="{{!hasUserInfo&&canIUse}}">
+                <button bindgetuserinfo="getUserInfo" class="get-top" openType="getUserInfo"> 授权拆红包 </button>
+            </view>
+            <view wx:else>
+                <view class="user-avator">
+                    <view class="icons" wx:for="{{teamInfo.userInfoList}}" wx:key="{{index}}">
+                        <image class="title" src="//shop-img.rekoon.cn/red/activity_detail_pic_leader.png" wx:if="{{item.role==1}}"></image>
+                        <image class="image" src="{{item.imgUrl}}"></image>
+                    </view>
+                    <view class="icons" wx:for="{{nullLen}}" wx:key="{{index}}">
+                        <image class="image" src="//shop-img.rekoon.cn/kQm7M3V6KoMuK5VCactivity_detail_pic___png.png"></image>
+                    </view>
+                </view>
+                <view class="h1" wx:if="{{teamInfo.status==1}}">邀请{{nullLen}}个好友,一起瓜分{{teamInfo.totalPrice}}元现金！</view>
+                <view class="h1" wx:if="{{teamInfo.status==10}}">这个红包已被拆完，你可以再开一个新团哦～</view>
+                <view class="h1" wx:if="{{teamInfo.status==2||teamInfo.status==3}}">已加入{{teamHeader}}的拆红包团，还差{{nullLen}}人即可瓜分红包</view>
+                <view class="h1" wx:if="{{teamInfo.status==4}}">{{teamHeader}}邀请你参与拆红包，只差{{nullLen}}人即可瓜分红包</view>
+                <view class="h1" wx:if="{{teamInfo.status==8||teamInfo.status==9}}">很遗憾，您已经是焕熊用户了呦 </view>
+                <view class="h1" style="margin-top: 0; height: .5rpx; position: relative; top: -.2rpx" wx:if="{{teamInfo.status==8||teamInfo.status==9}}">无法参与此次瓜分~</view>
+                <view class="h1" wx:if="{{teamInfo.status==11}}">很遗憾,拆红包已超时,您可以再开一个新团哦～</view>
+                <view class="div count-down" wx:if="{{teamInfo.status==1||teamInfo.status==2||teamInfo.status==3||teamInfo.status==4}}">
+                    <view class="div" wx:if="{{show==1}}">
+                        <view class="h1" style="margin-top: 0">拼团剩余时间 </view>
+                        <view class="span">{{timehour}}</view>:
+          <view class="span">{{timeminute}}</view>:
+          <view class="span">{{timesecond}}</view>
+                    </view>
+                    <view class="div" wx:if="{{show==2}}">
+                        <view class="h1" style="margin-top: 0">拼团剩余时间</view>
+                        <view class="span">00</view>:
+          <view class="span">00</view>:
+          <view class="span">00</view>
+                    </view>
+                </view>
+                <view class="h2" wx:if="{{teamInfo.status==11&&teamInfo.status}}">失效时间:{{teamInfo.expiration_at}}</view>
+                <form bindsubmit="buttonClick" data-index="{{index}}" data-item-statue="{{teamInfo.status}}" reportSubmit="true" wx:if="{{!isNewUser}}" wx:for="{{collageType[teamInfo.status]}}" wx:key="{{index}}">
+                    <button class="button {{item.class}}" formType="submit" openType="{{item.event=='invite'?'share':''}}">{{item.text}}</button>
+                </form>
+                <view wx:if="{{isNewUser}}">
+                    <view class="code-text">
+                        <image src="{{teamInfo.status==4||teamInfo.status==5?'https://img.rekoon.cn/xcx/scan.png':'https://img.rekoon.cn/xcx/scan.png'}}"></image>
+                    </view>
+                    <view class="share-code">
+                        <image alt="" bindtap="saveImgToPhotosAlbumTap" src="{{codeUrl}}" wx:if="{{codeUrl}}"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="section" wx:if="{{teamInfo.spellGroupStatus==3&&teamInfo.status!=10&&teamInfo.status!=11}}">
+            <view class="rank-ul">
+                <view class="li" wx:for="{{teamInfo.userInfoList}}" wx:key="index">
+                    <image alt="" class="group" src="//shop-img.rekoon.cn/red/activity_detail_pic_leader.png" wx:if="{{item.role==1}}"></image>
+                    <view class="h1">
+                        <view class="p">
+                            <image alt="" src="{{item.imgUrl}}"></image>
+                        </view>
+                        <view class="span">{{item.userName}}</view>
+                        <view class="b">{{item.price}}元</view>
+                    </view>
+                    <view class="p" wx:if="{{item.mvp=='手气最佳'}}">
+                        <view class="span" style="font-size: 25rpx">手气最佳</view>
+                        <image alt="" class="king" src="//shop-img.rekoon.cn/68708936397807018.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+.home {
+    width: 84rpx;
+    height: 84rpx;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100rpx;
+    right: 20rpx;
+    z-index: 99;
+}
+
+.home image {
+    width: 84rpx;
+    height: 84rpx;
+}

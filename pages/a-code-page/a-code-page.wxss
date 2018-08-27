@@ -1,0 +1,22 @@
+image {
+    width: 675rpx;
+    height: 1200rpx;
+    margin: auto;
+    display: block;
+}
+
+view {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+
+text {
+    width: 100%;
+    display: block;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    color: #808080;
+    text-align: center;
+    background: #fff;
+}

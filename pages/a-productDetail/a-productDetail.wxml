@@ -1,0 +1,163 @@
+<view class="wrapper">
+    <view class="wrpper">
+        <view class="lbt">
+            <swiper autoplay circular bindchange="_change" class="swiper" current="{{showIndex}}" interval="{{3000}}">
+                <swiper-item class="swiper-item" wx:for="{{goodsInfo.goods.image}}" wx:key="{{index}}">
+                    <view class="slide-image">
+                        <view class="sell-out" wx:if="{{goodsInfo.goods.rest==0}}"></view>
+                        <image bindtap="clickImg" data-postUrl="{{item}}" mode="widthFixed" src="{{item}}"></image>
+                    </view>
+                </swiper-item>
+            </swiper>
+            <view class="index" wx:if="{{goodsInfo.goods.image.length>1}}">{{num}}/{{goodsInfo.goods.image.length}}</view>
+        </view>
+    </view>
+    <view class="describe">
+        <view class="left">
+            <view class="left_top">
+                <view class="status">{{goodsInfo.goods.status==1?'进行中':'已结束'}}</view>
+                <view class="img"></view>
+                <view class="count">{{goodsInfo.goods.integral}}枚</view>
+            </view>
+            <view class="left_bottom">共{{goodsInfo.goods.total}}件商品，还剩{{goodsInfo.goods.rest}}可抢</view>
+        </view>
+        <view class="right">
+            <view class="haveCount">我有{{goodsInfo.integral}}枚章</view>
+            <view bindtap="goInviteInterge" class="gointerge">
+                <image src="https://img.rekoon.cn/integra/Oval%202@2x.png"></image>
+                <text>领取免邮券</text>
+            </view>
+        </view>
+    </view>
+    <view class="productInfo">
+        <view class="productName">{{goodsInfo.goods.title}}</view>
+        <view class="info"> {{goodsInfo.goods.content}}</view>
+    </view>
+    <view bindtap="showModelTipe" class="active">
+        <view class="active_left">
+            <view class="img"></view>
+            <view class="text">轻松领取焕熊章</view>
+        </view>
+        <view class="active_right">
+            <view class="img"></view>
+            <view class="text">焕熊章换好物</view>
+        </view>
+        <view class="active_right">
+            <view class="img"></view>
+            <view class="text">快递送上门</view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+    <view class="exchange" wx:if="{{userBuyList.length}}">
+        <view class="title">兑换成功榜 <text>({{userBuyList.length}}位)</text>
+        </view>
+        <scroll-view scrollY class="messages">
+            <view class="lists" wx:for="{{userBuyList}}" wx:key="{{index}}">
+                <view class="lists_left">
+                    <image class="img" src="{{item.imgUrl}}"></image>
+                    <view class="phone">{{item.userName}}</view>
+                </view>
+                <view class="lists_right">
+                    <view class="num">{{item.title}}</view>
+                    <view class="time">{{item.min}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <common-jifen goodsList="{{goodsList}}" title="热门好物"></common-jifen>
+    <over loads="{{loads}}" pageFlag="{{pageFlag}}"></over>
+    <view style="height: 140rpx;width:100vw"></view>
+    <view class="bottom">
+        <view class="left">
+            <button class="service" formType="submit" openType="contact">
+                <view class="img">
+                    <image src="https://img.rekoon.cn/ic_serve.png"></image>
+                </view>
+                <view class="text">客服</view>
+            </button>
+            <button bindtap="goInviteFrends" class="share" openType="share">
+                <view class="img">
+                    <image src="https://img.rekoon.cn/ic_share.png"></image>
+                </view>
+                <view class="text">分享</view>
+            </button>
+        </view>
+        <view bindtap="showModel" class="btn {{goodsInfo.goods.rest==0?'selllOut':''}}">我要了</view>
+    </view>
+    <pop-model id="modelPopTip">
+        <view class="modelPopTip-wrap">
+            <view class="itme" wx:for="{{tipeList}}" wx:key="{{index}}">
+                <view class="item-title">{{item.title}}</view>
+                <view class="item-content">{{item.content}}</view>
+            </view>
+            <image bindtap="hideModelTipe" src="https://shop-img.rekoon.cn/img/buy_ic_close_checkstand.png"></image>
+        </view>
+    </pop-model>
+    <pop-model id="modelPop" popType="center">
+        <view class="hasNone">
+            <image bindtap="closePop" src="https://img.rekoon.cn/jifens/close.png"></image>
+            <view class="text-none">
+        你的焕熊章不足哦～
+      </view>
+            <view bindtap="jifenPage" class="button">
+        赚更多
+      </view>
+        </view>
+    </pop-model>
+    <pop-model id="model">
+        <view class="model-content">
+            <view class="line-item">
+                <view class="first">一口章数：</view>
+                <view class="sec">{{goodsInfo.goods.integral}}</view>
+            </view>
+            <view class="line-item params" wx:for="{{goodsParams}}" wx:for-item="data" wx:key="{{index}}">
+                <view class="first">{{data.name}}：</view>
+                <view class="right">
+                    <view bindtap="selectThis" class="{{goodsSelectParams[data.name]==item?'select':'xxx'}}" data-name="{{item}}" data-title="{{data.name}}" wx:for="{{data.lists}}" wx:key="{{index}}">{{item}}</view>
+                </view>
+            </view>
+            <view class="line-item" wx:if="{{adressPrice}}">
+                <view class="first">支付运费：</view>
+                <view class="sec" style="color: #565656">{{adressPrice}}元</view>
+                <view class="collage-wrpper">
+                    <view>或</view>
+                    <view bindtap="goInviteInterge" class="gointerge">
+                        <image src="https://img.rekoon.cn/integra/Oval%202@2x.png"></image>
+                        <text>领取免邮券</text>
+                    </view>
+                    <image src="https://img.rekoon.cn/integra/banner/ic_go@2x.png"></image>
+                </view>
+            </view>
+            <view bindtap="chooseAdress" class="line-item adress" wx:if="{{adressInfo.id}}">
+                <view class="default">默认</view>
+                <view class="adressinfos">{{adressInfo.address}}</view>
+                <view class="change-adress">修改</view>
+            </view>
+            <view class="line-item last" wx:else>
+                <view class="first">支付运费：</view>
+                <view bindtap="chooseAdress" class="sec">
+                    <view>
+            填写收货地址计算邮费
+          </view>
+                </view>
+            </view>
+            <view class="pop-info">
+                <view class="info">
+          确认出章后若未支付邮费，订单将在12小时后自动取消，同时扣章20%。
+        </view>
+                <view bindtap="submitOrder" class="submit">
+          确认出章
+        </view>
+            </view>
+        </view>
+    </pop-model>
+    <view bindtap="gohome" class="home">
+        <image src="https://img.rekoon.cn/ic_backhome.png"></image>
+    </view>
+    <loads wx:if="{{showLoad}}"></loads>
+    <loads bg="{{0.5}}" wx:if="{{wantLoading}}"></loads>
+    <bind-phone id="bind"></bind-phone>
+    <view wx:if="{{hideFMCanvas!=undefined&&!hideFMCanvas}}">
+        <canvas canvasId="tdcanvas" style="position: absolute; top: 200vh"></canvas>
+    </view>
+</view>

@@ -1,0 +1,16 @@
+.wrap {
+    height: 21rpx;
+    width: 30rpx;
+    background: red;
+}
+
+.wrap view {
+    width: 21rpx;
+    height: 21rpx;
+    margin-right: 13rpx;
+}
+
+.wrap view image {
+    width: 21rpx;
+    height: 21rpx;
+}

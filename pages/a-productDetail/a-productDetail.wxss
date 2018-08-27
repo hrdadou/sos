@@ -1,0 +1,704 @@
+.wrapper {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.model-content {
+    width: 100%;
+}
+
+.text-none {
+    text-align: center;
+    font-size: 32rpx;
+    color: #565656;
+    justify-content: space-between;
+}
+
+.hasNone .button {
+    width: 336rpx;
+    height: 121rpx;
+    margin: auto;
+    margin-top: 50rpx;
+    background: url('https://img.rekoon.cn/jifens/sign_in_btn.png') no-repeat;
+    background-size: 100% 100%;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 92rpx;
+    color: #FFFFFF;
+}
+
+.adressinfos {
+    font-size: 26rpx!important;
+    color: #A1A1A1!important;
+    width: 100%;
+    margin-left: 15rpx;
+}
+
+.change-adress {
+    font-size: 24rpx;
+    color: #6A6A6A;
+    letter-spacing: 0.61rpx;
+    background: url('https://img.rekoon.cn/jifens/btn_bg.png') no-repeat;
+    background-size: 100% 100%;
+    width: 130rpx;
+    height: 46rpx;
+    text-align: center;
+    line-height: 46rpx;
+    margin-right: 20rpx;
+}
+
+.default {
+    border: 2rpx solid #6D84DD;
+    border-radius: 6rpx;
+    width: 70rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    text-align: center;
+    font-size: 20rpx!important;
+    color: #6D84DD!important;
+}
+
+.hasNone {
+    position: relative;
+    padding-top: 197rpx;
+    width: 590rpx;
+    height: 448rpx;
+    background: url('https://img.rekoon.cn/jifen/pop_bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.hasNone image {
+    width: 44rpx;
+    height: 44rpx;
+    position: absolute;
+    right: 0;
+    top: -5rpx;
+    display: block;
+}
+
+view {
+    box-sizing: border-box;
+}
+
+.line-item {
+    display: flex;
+    height: 100rpx;
+    align-items: center;
+    border-bottom: 1rpx solid #f0f0f0;
+    margin-left: 30rpx;
+}
+
+.line-item.params {
+    min-height: 120rpx;
+    height: auto;
+    position: relative;
+}
+
+.line-item.params .first {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-item.params .right {
+    position: relative;
+    left: 150rpx;
+    width: 530rpx;
+}
+
+.line-item.last {
+}
+
+.line-item.adress {
+    justify-content: space-between;
+}
+
+.line-item.params view {
+    display: inline-block;
+    font-size: 28rpx;
+    color: #6a6a6a;
+}
+
+.line-item.params .right {
+    padding-bottom: 10rpx;
+}
+
+.line-item.params .right view {
+    padding: 0 16rpx!important;
+    width: auto;
+    font-size: 24rpx;
+    min-width: 114rpx;
+    height: 54rpx;
+    text-align: center;
+    line-height: 54rpx;
+    border: 1px solid #BCBCBC;
+    border-radius: 4rpx;
+    margin: 10rpx 10rpx 0 0;
+    transition: all .2s;
+}
+
+.select {
+    border: 1px solid #6C6C79!important;
+    background: #6C6C79;
+    color: #ffffff!important;
+}
+
+.pop-info {
+    background: #fafafa;
+    padding: 20rpx 0 81rpx 0;
+}
+
+.pop-info .info {
+    font-size: 26rpx;
+    color: #A1A1A1;
+    width: 690rpx;
+    margin: auto;
+    line-height: 40rpx;
+}
+
+.pop-info .submit {
+    width: 500rpx;
+    height: 98rpx;
+    background: #34343E;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 98rpx;
+    font-size: 30rpx;
+    color: #FFFFFF;
+    margin: 50rpx 0 0 125rpx;
+}
+
+.line-item view.first {
+    font-size: 28rpx;
+    color: #6A6A6A;
+    width: 150rpx;
+    height: 100%;
+    line-height: 100rpx;
+}
+
+.line-item view.sec {
+    font-size: 28rpx;
+    color: #DD5852;
+}
+
+.line-item view.sec view {
+    border: 1rpx solid #DD5852;
+    border-radius: 10rpx;
+    width: 305rpx;
+    height: 50rpx;
+    font-size: 24rpx;
+    color: #DD5852;
+    line-height: 50rpx;
+    text-align: center;
+}
+
+.lbt {
+    background: #fff;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 750rpx;
+    background: #fff;
+}
+
+.swiper .slide-image {
+    width: 658rpx;
+    height: 658rpx;
+    display: block;
+    overflow: hidden;
+    margin: 46rpx;
+    position: relative;
+}
+
+.sell-out {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('https://img.rekoon.cn/integra/buy_pic_soldout_big.png') no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+}
+
+.swiper .slide-image image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.indicators {
+    left: 50%;
+    bottom: 70rpx;
+    position: absolute;
+    height: 6rpx;
+    transform: translate3d(-50%,0,0);
+}
+
+.indicators .i {
+    display: inline-block;
+    width: 30rpx;
+    height: 4rpx;
+    margin: 0 5rpx;
+    background: rgba(0,0,0,0.20);
+}
+
+.indicators .i.active {
+    background: #fff;
+}
+
+.index {
+    width: 76rpx;
+    background: rgba(0,0,0,.22);
+    background-size: 76rpx 34rpx;
+    color: #fff;
+    height: 34rpx;
+    line-height: 30rpx;
+    font-size: 28rpx;
+    border-radius: 15rpx;
+    text-align: center;
+    margin-left: 640rpx;
+    margin-top: 20rpx;
+    position: absolute;
+    bottom: 50rpx;
+    right: 50rpx;
+}
+
+.describe {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2rpx solid #f0f0f0;
+}
+
+.describe .left_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.describe .right {
+    min-width: 170rpx;
+    margin-right: 30rpx;
+}
+
+.left_top .status {
+    width: 95rpx;
+    height: 46rpx;
+    background: url("https://img.rekoon.cn/buy_commodity_pic_tag.png") no-repeat;
+    background-size: 95rpx 46rpx;
+    color: #fff;
+    line-height: 46rpx;
+    text-align: center;
+    font-size: 24rpx;
+    margin-left: 30rpx;
+    margin-right: 24rpx;
+}
+
+.left_top .img {
+    width: 44rpx;
+    height: 44rpx;
+    background: url("https://img.rekoon.cn/jifens/ic_rekoon.png") no-repeat;
+    background-size: 44rpx 44rpx;
+    vertical-align: middle;
+    margin-right: 8rpx;
+}
+
+.left_bottom {
+    height: 33rpx;
+    color: #808080;
+    font-size: 24rpx;
+    line-height: 33rpx;
+    margin: 20rpx 30rpx;
+}
+
+.left_top .count {
+    height: 53rpx;
+    line-height: 53rpx;
+    text-align: center;
+    font-size: 38rpx;
+    color: #DD5852;
+    margin-right: 30rpx;
+}
+
+.freight {
+    width: 130rpx;
+    height: 33rpx;
+    text-align: center;
+    line-height: 33rpx;
+    color: #808080;
+    font-size: 24rpx;
+    margin-right: 30rpx;
+    margin-top: 23rpx;
+    margin-bottom: 20rpx;
+}
+
+.haveCount {
+    text-align: right;
+    height: 40rpx;
+    font-size: 28rpx;
+    color: #565656;
+    line-height: 40rpx;
+}
+
+.productInfo {
+    padding-bottom: 1rpx;
+    margin: 0;
+    width: 750rpx;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+
+.productInfo .productName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90vw;
+    height: 88rpx;
+    line-height: 88rpx;
+    color: #565656;
+    font-size: 30rpx;
+    text-align: left;
+    margin-left: 30rpx;
+}
+
+.productInfo .info {
+    font-size: 26rpx;
+    margin-left: 30rpx;
+    color: #808080;
+    margin-right: 11rpx;
+    line-height: 40rpx;
+    margin-bottom: 30rpx;
+}
+
+.active {
+    width: 702rpx;
+    height: 90rpx;
+    background: #fff;
+    border-radius: 8rpx;
+    display: flex;
+    margin: 0 auto;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    justify-content: space-around;
+}
+
+.active .img {
+    width: 10rpx;
+    height: 10rpx;
+    background: url("https://img.rekoon.cn/integral/ic_mark.png") no-repeat;
+    background-size: 8rpx 8rpx;
+    margin-right: 8rpx;
+    margin-top: 3rpx;
+}
+
+.active_left {
+    display: flex;
+    align-items: center;
+}
+
+.active_right {
+    display: flex;
+    align-items: center;
+}
+
+.active .arrow {
+    width: 13rpx;
+    height: 21rpx;
+    background: url("https://img.rekoon.cn/ic_go.png") no-repeat;
+    background-size: 13rpx 21rpx;
+    margin: 0 32rpx 0 54rpx;
+}
+
+.active .text {
+    font-size: 24rpx;
+    height: 33rpx;
+    line-height: 33rpx;
+    color: #808080;
+}
+
+.exchange {
+    width: 702rpx;
+    height: 430rpx;
+    background: #fff;
+    margin: 20rpx auto 20rpx;
+    padding-top: 30rpx;
+}
+
+.exchange .title {
+    width: 243rpx;
+    height: 42rpx;
+    line-height: 42rpx;
+    text-align: center;
+    margin: 0 auto 20rpx;
+    font-size: 30rpx;
+    color: #565656;
+}
+
+.exchange .title text {
+    width: 89rpx;
+    height: 42rpx;
+    line-height: 42rpx;
+    font-size: 24rpx;
+    text-align: center;
+    color: #565656;
+}
+
+.exchange .lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx dashed #f0f0f0;
+    margin-left: 30rpx;
+}
+
+.exchange .lists_right {
+    display: flex;
+}
+
+.lists_right .time {
+    margin-left: 10rpx;
+    margin-right: 60rpx;
+}
+
+.messages {
+    width: 700rpx;
+    height: 315rpx;
+    overflow: hidden;
+}
+
+.messages .lists {
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+}
+
+.messages .lists_left {
+    display: flex;
+    align-items: center;
+}
+
+.messages .lists_left .img {
+    width: 34rpx;
+    height: 34rpx;
+    background: red;
+    border-radius: 50%;
+    margin-right: 10rpx;
+}
+
+.lists_left .phone {
+    color: #565656;
+    font-size: 28rpx;
+}
+
+.lists_right .num {
+    font-size: 24rpx;
+    color: #808080;
+    margin-right: 30rpx;
+}
+
+.lists_right .time {
+    color: #A1A1A1;
+    font-size: 24rpx;
+}
+
+.hot {
+    width: 90%;
+    background: #fff;
+    margin: 20rpx auto;
+}
+
+.hot .top {
+    width: 100%;
+    text-align: center;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70rpx;
+}
+
+.hotLists {
+    width: 45%;
+    border: 1rpx solid red;
+    border-radius: 10rpx;
+    margin: 20rpx 0 0 20rpx;
+}
+
+.hotLists .img {
+    width: 200rpx;
+    margin: 10rpx auto;
+}
+
+.img image {
+    width: 100%;
+    height: 300rpx;
+}
+
+.productName {
+    width: 100%;
+    text-align: center;
+}
+
+.duihuan {
+    width: 100%;
+    text-align: center;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    background: #fff;
+    color: #808080;
+    justify-content: space-between;
+}
+
+.bottom .left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.bottom .img {
+    width: 52rpx;
+    height: 48rpx;
+}
+
+.bottom .img image {
+    width: 52rpx;
+    height: 48rpx;
+}
+
+.bottom .text {
+    width: 52rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    text-align: center;
+    color: #808080;
+    font-size: 22rpx;
+    margin-top: 5rpx;
+}
+
+.bottom .service {
+    margin: 0 88rpx 0 60rpx;
+}
+
+.bottom .share {
+    margin-right: 108rpx;
+}
+
+.bottom .btn {
+    width: 360rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    background: #34343E;
+    color: #fff;
+    font-size: 28rpx;
+    border-radius: 9rpx;
+    margin: 16rpx 40rpx 0 0;
+}
+
+.home {
+    width: 84rpx;
+    height: 84rpx;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 160rpx;
+    right: 20rpx;
+}
+
+.home image {
+    width: 84rpx;
+    height: 84rpx;
+}
+
+.footer {
+    width: 100%;
+    height: 37rpx;
+    line-height: 37rpx;
+    color: #A1A1A1;
+    text-align: center;
+    margin: 42rpx 0 152rpx 0;
+    font-size: 24rpx;
+}
+
+.modelPopTip-wrap {
+    box-sizing: border-box;
+    padding: 50rpx 30rpx 0 30rpx;
+    position: relative;
+}
+
+.modelPopTip-wrap image {
+    width: 30rpx;
+    height: 30rpx;
+    display: block;
+    top: 29rpx;
+    right: 29rpx;
+    position: absolute;
+}
+
+.modelPopTip-wrap .item-title {
+    font-size: 28rpx;
+    color: rgba(106,106,106,1);
+    line-height: 40rpx;
+}
+
+.modelPopTip-wrap .item-content {
+    font-size: 26rpx;
+    color: rgba(161,161,161,1);
+    line-height: 40rpx;
+    margin-bottom: 30rpx;
+}
+
+.selllOut {
+    background: #ccc!important;
+    color: #fff;
+}
+
+.collage-wrpper {
+    display: flex;
+    align-items: center;
+}
+
+.collage-wrpper image {
+    width: 18rpx;
+    height: 26rpx;
+    display: block;
+    margin-left: 5rpx;
+    margin-top: 1rpx;
+}
+
+.collage-wrpper view:nth-child(1) {
+    font-size: 26rpx;
+    color: #A1A1A1;
+    margin: 0 10rpx 0 20rpx;
+}
+
+.collage-wrpper view:nth-child(2) {
+    margin-top: 0!important;
+}
+
+.gointerge {
+    float: right;
+    width: 170rpx;
+    height: 33rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26rpx;
+    color: #E25149;
+    margin-top: 30rpx;
+}
+
+.gointerge image {
+    width: 30rpx;
+    height: 25rpx;
+}

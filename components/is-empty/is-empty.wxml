@@ -1,0 +1,7 @@
+<view class="wrap {{position?'pos':''}}">
+    <view class="img">
+        <image src="{{url}}"></image>
+    </view>
+    <view class="text">{{text}}</view>
+    <view bindtap="click" class="btn" wx:if="{{show}}">{{btn}}</view>
+</view>

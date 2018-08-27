@@ -1,0 +1,5 @@
+<form bindsubmit="goDetail" class="form-wrap" reportSubmit="true">
+    <button class="button-formid" formType="submit" hoverClass="btn-hover">
+        <slot></slot>
+    </button>
+</form>

@@ -1,0 +1,180 @@
+.count-wrapper {
+    width: 702rpx;
+    margin: auto;
+    margin-top: 20rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    padding-bottom: 5rpx;
+}
+
+.tit {
+    font-family: PingFangSC-Medium;
+    position: relative;
+    width: 100%;
+    font-size: 32rpx;
+    text-align: center;
+    padding-top: 40rpx;
+    margin-bottom: 12rpx;
+}
+
+.tit .main-title {
+    color: #565656;
+    font-size: 34rpx;
+}
+
+.tit .subtitle {
+    font-size: 22rpx;
+    color: #A1A1A1;
+    padding-top: 8rpx;
+}
+
+.tit .tit-many {
+    height: 42rpx;
+    line-height: 42rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 65rpx;
+    font-size: 26rpx;
+    color: #6a6a6a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tit .tit-many .i {
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 5rpx;
+    margin-top: -3rpx;
+    display: inline-block;
+}
+
+.tit .tit-many .i image {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-line {
+    padding: 20rpx 0 10rpx 20rpx;
+}
+
+.scroll-item {
+    background: #FFFFFF;
+    border: 1rpx solid #F1F1F1;
+    border-radius: 8rpx;
+    margin: 0 15rpx 20rpx 0;
+    display: inline-block;
+    width: 321rpx;
+    padding-bottom: 20rpx;
+}
+
+.scroll-item .small-card {
+    width: 228rpx;
+    height: 33rpx;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22rpx;
+    overflow: hidden;
+    margin-top: 10rpx;
+}
+
+.scroll-img {
+    position: relative;
+    width: 260rpx;
+    margin: auto;
+    height: 255rpx;
+}
+
+.scroll-img image {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-img .right-icon {
+    min-width: 70rpx;
+    padding: 0 10rpx 0 10rpx;
+    height: 38rpx;
+    background: #6D84DD;
+    color: #fff;
+    text-align: center;
+    line-height: 38rpx;
+    font-size: 24rpx;
+    border-radius: 20rpx 20rpx 4rpx 4rpx;
+    position: absolute;
+    bottom: -5rpx;
+    right: 0;
+}
+
+.rmb {
+    font-size: 24rpx;
+    color: #f5655b;
+}
+
+.priceRmb {
+    font-size: 34rpx;
+    color: #f5655b;
+}
+
+.modelName {
+    margin-top: 10rpx;
+    font-size: 26rpx;
+    color: #565656;
+    text-align: center;
+}
+
+.text {
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    color: #808080;
+    text-align: center;
+}
+
+.price-phone {
+    height: 50rpx;
+    width: 100%;
+    text-align: center;
+    line-height: 50rpx;
+    margin-top: 10rpx;
+}
+
+.price-phone .first-price {
+    display: flex;
+    align-items: center;
+}
+
+.price-phone .over-price {
+    background: #F56C63;
+    border-radius: 4rpx;
+    padding: 0 8rpx;
+    color: #fff;
+    font-size: 22rpx;
+    line-height: 33rpx;
+    margin-left: 9rpx;
+    height: 30rpx;
+}
+
+.price-phone .h3 {
+    float: left;
+    text-align: center;
+    width: 100%;
+    font-size: 34rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-phone .h4 {
+    float: left;
+    line-height: 52rpx;
+    font-size: 24rpx;
+    color: #A1A1A1;
+}
+
+.more-botoom {
+    font-size: 24rpx;
+    color: #a1a1a1;
+    text-align: center;
+    margin-bottom: 30rpx;
+}

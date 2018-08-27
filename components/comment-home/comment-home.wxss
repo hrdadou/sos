@@ -1,0 +1,259 @@
+.wrapper {
+    width: 702rpx;
+    border-radius: 10rpx;
+    margin: auto;
+    margin-top: 20rpx;
+    background: #fff;
+}
+
+.wrapper.sell {
+    background: rgba(255,255,255,0.84);
+    box-shadow: 0px 2rpx 16rpx 0rpx rgba(109,120,130,0.08);
+    margin-top: 30rpx;
+}
+
+.model-names {
+    width: 229rpx;
+    height: 30rpx;
+    overflow: hidden;
+}
+
+.tit {
+    font-family: PingFangSC-Medium;
+    position: relative;
+    width: 100%;
+    font-size: 32rpx;
+    text-align: center;
+    padding-top: 40rpx;
+    margin-bottom: 12rpx;
+}
+
+.tit .main-title {
+    color: #565656;
+    font-size: 34rpx;
+}
+
+.tit .subtitle {
+    font-size: 22rpx;
+    color: #A1A1A1;
+    padding-top: 8rpx;
+}
+
+.tit .tit-many {
+    height: 42rpx;
+    line-height: 42rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 65rpx;
+    font-size: 26rpx;
+    color: #6a6a6a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tit .tit-many .i {
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 5rpx;
+    margin-top: -3rpx;
+    display: inline-block;
+}
+
+.tit .tit-many .i image {
+    width: 100%;
+    height: 100%;
+}
+
+.multiple-evaluation {
+    width: 682rpx;
+    height: 80rpx;
+    border-radius: 4rpx;
+    line-height: 80rpx;
+    overflow: hidden;
+    margin: 10rpx auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.multiple-evaluation .p1 {
+    display: flex;
+    justify-content: space-between;
+    width: 180rpx;
+    margin-left: 28rpx;
+}
+
+.multiple-evaluation .p1 .span1 {
+    font-size: 26rpx;
+    color: #6a6a6a;
+}
+
+.multiple-evaluation .p1 .span2 {
+    font-size: 32rpx;
+    color: #E15B52;
+}
+
+.multiple-evaluation .p2 .span2 {
+    font-size: 32rpx;
+    color: #E15B52;
+}
+
+.multiple-evaluation .p2 {
+    display: flex;
+    justify-content: space-between;
+    width: 180rpx;
+    margin-right: 28rpx;
+}
+
+.multiple-evaluation .p2 .span1 {
+    font-size: 26rpx;
+    color: #6A6A6A;
+}
+
+.multiple-evaluation .p2 .span2 {
+    margin-right: 17rpx;
+    font-size: 26rpx;
+    color: #6A6A6A;
+}
+
+.multiple-evaluation .p2 .span3 {
+    float: right;
+    width: 42rpx;
+    height: 42rpx;
+    margin-top: 18rpx;
+    background: url('//img.rekoon.cn/newHome/arrow_ic.png');
+    background-size: 100% 100%;
+}
+
+.scroll-view {
+    width: 672rpx;
+    height: 340rpx;
+    margin: auto;
+    padding-bottom: 20rpx;
+}
+
+.view-item {
+    padding: 20rpx;
+    width: 465rpx;
+    height: 268rpx;
+    border-radius: 8rpx;
+    border: 1px solid rgba(241,241,241,1);
+    margin-right: 30rpx;
+}
+
+.has-images {
+    width: 74rpx;
+    height: 32rpx;
+    background: rgba(255,240,239,1);
+    border-radius: 100rpx;
+    font-size: 20rpx;
+    line-height: 32rpx!important;
+    text-align: center;
+    margin-left: 92rpx;
+    color: rgba(226,81,73,1);
+}
+
+.user-item {
+    width: 490rpx;
+    height: 100rpx;
+    margin: auto;
+    display: flex;
+    border-radius: 10rpx;
+}
+
+.user-item .user-avator {
+    width: 82rpx;
+    height: 82rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20rpx;
+}
+
+.user-comment {
+    flex: 1;
+}
+
+.star {
+    width: 150rpx;
+    height: 30rpx;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: -3rpx;
+}
+
+.star image {
+    width: 21rpx;
+    height: 21rpx;
+    display: block;
+}
+
+.pin-text {
+    font-size: 26rpx;
+    color: #a1a1a1;
+}
+
+.dates {
+    color: #999999;
+    font-size: 24rpx;
+    margin-right: 20rpx;
+}
+
+.user-item .user-avator image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.user-item view {
+    line-height: 41rpx;
+}
+
+.phone {
+    width: 100%;
+    font-size: 28rpx;
+    color: #808080;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-next {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-main {
+    width: 5150rpx;
+    padding-left: 30rpx;
+    display: flex;
+}
+
+.pinglun {
+    margin-top: 20rpx;
+    width: 100%;
+    line-height: 44rpx;
+    height: 87rpx;
+    color: #6A6A6A;
+    font-size: 28rpx;
+    overflow: hidden;
+}
+
+.comment-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #a1a1a1;
+    margin-top: 15rpx;
+}
+
+.model-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.model-right view:last-child {
+    color: #eb9194;
+}

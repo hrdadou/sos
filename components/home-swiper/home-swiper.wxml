@@ -1,0 +1,12 @@
+<view class="wrap">
+    <swiper autoplay circular bindchange="_change" class="swiper" current="{{showIndex}}" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+        <swiper-item class="swiper-item" wx:for="{{img_url}}" wx:key="{{index}}">
+            <view class="slide-image">
+                <image bindtap="clickImg" data-postUrl="{{item.bannerUrl}}" src="{{item.imgUrl}}"></image>
+            </view>
+        </swiper-item>
+    </swiper>
+    <view class="indicators" wx:if="{{img_url.length>1}}">
+        <view class="i {{index===showIndex?'active':''}}" wx:for="{{img_url}}" wx:key="{{index}}"></view>
+    </view>
+</view>

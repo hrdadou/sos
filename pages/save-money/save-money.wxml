@@ -1,0 +1,42 @@
+<view class="wrapper">
+    <view class="money-content">
+        <view class="money-info">账户余额(元): {{overMoney}}</view>
+        <view class="after-save">
+            <text>充值金额</text>（充值后余额：{{overMoney+selectMoney}}）
+    </view>
+        <view class="insputer">
+            <view class="price-text">￥</view>
+            <input focus bindinput="onchange" type="number" value="{{selectMoney}}"></input>
+        </view>
+    </view>
+    <view class="select-title">请选择充值方式</view>
+    <view class="payTypeList">
+        <view bindtap="selectThisType" class="pay-item" data-type="{{item.payType}}" wx:for="{{payType}}" wx:key="{{index}}">
+            <view class="icon">
+                <image src="{{item.imgUrl}}"></image>
+            </view>
+            <view class="text">{{item.name}}</view>
+            <image class="image" src="{{select==item.payType?'https://img.rekoon.cn/collage/bgs/pc/buy_ic_choose_h1.png':'https://img.rekoon.cn/collage/bgs/pc/buy_ic_choose_n1.png'}}"></image>
+        </view>
+    </view>
+    <view bindtap="formSubmit" class="button">确定</view>
+    <view class="tixian-tips">
+        <image class="tip-icon" src="//shop-img.rekoon.cn/icon/login_remind_ic.png"></image>
+        <view>充值提示：每天只可充值一次</view>
+    </view>
+    <pop-model id="modal" popType="center">
+        <view class="over-wrap">
+            <image src="https://img.rekoon.cn/integrals/my_wallet_withdraw_deposit_succeed@2x.png"></image>
+            <view class="success">充值成功</view>
+            <view bindtap="closeModalSuccess" class="over-button">我知道了</view>
+        </view>
+    </pop-model>
+    <pop-model id="modalFail" popType="center">
+        <view class="over-wrap">
+            <image src="https://img.rekoon.cn/integrals/my_wallet_withdraw_deposit_fail@2x.png"></image>
+            <view class="success">充值失败</view>
+            <view bindtap="closeModalFail" class="over-button">我知道了</view>
+        </view>
+    </pop-model>
+    <loads wx:if="{{ready}}"></loads>
+</view>

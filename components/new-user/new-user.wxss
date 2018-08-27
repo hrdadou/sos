@@ -1,0 +1,35 @@
+.hasNone .button {
+    width: 336rpx;
+    height: 121rpx;
+    margin: auto;
+    margin-top: 50rpx;
+    background: url('https://img.rekoon.cn/jifens/sign_in_btn.png') no-repeat;
+    background-size: 100% 100%;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 92rpx;
+    color: #FFFFFF;
+}
+
+.text-none {
+    text-align: center;
+    font-size: 32rpx;
+    color: #565656;
+}
+
+.hasNone {
+    position: relative;
+    padding-top: 197rpx;
+    width: 590rpx;
+    background: url('https://img.rekoon.cn/jifen/pop_bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.hasNone image {
+    width: 44rpx;
+    height: 44rpx;
+    position: absolute;
+    right: 0;
+    top: -5rpx;
+    display: block;
+}

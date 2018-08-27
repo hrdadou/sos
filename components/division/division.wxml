@@ -1,0 +1,21 @@
+<view class="division">
+    <view class="header">
+        <view class="title_name">{{apple?'苹果热门':'安卓热门'}}</view>
+        <view class="title_ename">{{apple?'Apple Popular':'Android Popular'}}</view>
+    </view>
+    <view class="productList">
+        <form bindsubmit="sell" class="item" data-mainType="{{item.mainType}}" data-name="{{item.name}}" data-quotedId="{{item.quotedId}}" reportSubmit="true" wx:for="{{list}}" wx:key="index">
+            <button class="button-formid" formType="submit" hoverClass="btn-hover">
+                <image src="https://img.rekoon.cn/{{item.imgUrl}}"></image>
+                <view class="name">{{item.name}}</view>
+                <view class="heigh_price">最高￥
+          <text>{{item.maxPrice}}</text>
+                </view>
+                <view class="recycle">回收价:￥
+          <text>{{item.avgPrice}}</text>
+                </view>
+                <button class="btn">立即保卖</button>
+            </button>
+        </form>
+    </view>
+</view>

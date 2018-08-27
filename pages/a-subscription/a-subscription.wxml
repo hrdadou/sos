@@ -1,0 +1,50 @@
+<view class="wrap">
+    <view class="auto">
+        <view class="imgs">
+            <image src="https://img.rekoon.cn/brands/model/chuizi/buy_ic_order.png"></image>
+        </view>
+        <view class="text">订阅机型后，每晚新品上架时会收到公众号发送的消息通知</view>
+    </view>
+    <view class="select-content">
+        <scroll-view scrollY class="left">
+            <view bindtap="modelClick" class="left-item {{brandId==item.brandId?'active':''}}" data-id="{{item.brandId}}" wx:for="{{modelLists}}" wx:key="{{index}}">
+                <view class="img-w">
+                    <image src="{{item.imgUrl}}"></image>
+                </view>
+                <view class="model-name">{{item.name}}</view>
+            </view>
+        </scroll-view>
+        <scroll-view scrollY class="right">
+            <view style="min-height: 105%">
+                <view class="title">
+                    <view class="title_left">
+                        <image src="https://img.rekoon.cn/brands/model/chuizi/buy_ic_order_h.png"></image>
+                        <view>已订阅</view>
+                    </view>
+                    <view bindtap="DeleteAll" class="title_right" wx:if="{{subscriptionList.length>0}}">全部取消</view>
+                    <view class="title_right_none" wx:else>全部取消</view>
+                </view>
+                <view class="subscribed">
+                    <view class="prompt" wx:if="{{subscriptionList.length==0}}">未订阅本品牌任何机型</view>
+                    <view class="qxSubscribe" wx:if="{{subscriptionList.length>0}}" wx:for="{{subscriptionList}}" wx:key="{{index}}">
+                        <view class="right-item">{{item.name}}</view>
+                        <view bindtap="qxSubscribe" class="icon" data-id="{{item.quotedId}}">取消订阅</view>
+                    </view>
+                    <view></view>
+                </view>
+                <view class="title">
+                    <view class="title_left">
+                        <image src="https://img.rekoon.cn/brands/model/chuizi/buy_ic_order_d.png"></image>
+                        <view>未订阅</view>
+                    </view>
+                    <view bindtap="allDy" class="title_right">全部订阅</view>
+                </view>
+                <view class="right-line" wx:for="{{modelDetailList}}" wx:key="{{index}}">
+                    <view class="right-item">{{item.name}}</view>
+                    <view bindtap="subscribe" class="icon" data-id="{{item.quotedId}}">+订阅</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+<loads wx:if="{{!modelLists[0]}}"></loads>

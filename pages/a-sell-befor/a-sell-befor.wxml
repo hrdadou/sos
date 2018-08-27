@@ -1,0 +1,39 @@
+<view class="wrap">
+    <swiper autoplay circular bindchange="_change" class="swiper" current="{{showIndex}}" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+        <swiper-item class="swiper-item" wx:for="{{img_url}}" wx:key="{{index}}">
+            <view class="slide-image">
+                <image bindtap="clickImg" data-postUrl="{{item.mini_link}}" src="{{item.image}}"></image>
+            </view>
+        </swiper-item>
+    </swiper>
+    <view class="indicators" wx:if="{{img_url.length>1}}">
+        <view class="i {{index===showIndex?'active':''}}" wx:for="{{img_url}}" wx:key="{{index}}"></view>
+    </view>
+</view>
+<view style="background: #fff">
+    <view bindtap="hidden" class="wrapper-limit">
+        <view class="main" wx:for="{{limits}}" wx:key="index">
+            <view class="i">
+                <image src="{{item.img}}"></image>
+            </view>
+            <view class="span">{{item.name}}</view>
+        </view>
+    </view>
+</view>
+<view class="zhi_sell">
+    <view bindtap="goSell" class="mobile" data-id="{{item.id}}" wx:for="{{cheoseList}}" wx:key="{{index}}">
+        <image src="{{item.url}}"></image>
+        <text>{{item.title}}</text>
+    </view>
+</view>
+<view class="background">
+    <division apple="ture" list="{{appleList}}"></division>
+    <division list="{{anzhuoList}}"></division>
+</view>
+<comment-home data="{{commentList}}" satisfy="{{satisfy}}" total="{{commentTotal}}"></comment-home>
+<view bindtap="assess" class="assess">一键保卖</view>
+<view class="over"></view>
+<contact-button show="{{showContact}}"></contact-button>
+<sell-server-card bindhidden="hidden" show="{{posShow}}"></sell-server-card>
+<loads wx:if="{{showLoad}}"></loads>
+<new-user></new-user>

@@ -1,0 +1,40 @@
+.title-select {
+    width: 702rpx;
+    height: 95rpx;
+    background: #fff;
+    margin: auto;
+}
+
+.title-select scroll-view {
+    height: 100%;
+    width: 100%;
+}
+
+.title-select scroll-view .item {
+    padding: 0 50px;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 95rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #808080;
+    display: inline-block;
+}
+
+.title-select scroll-view .item.active {
+    font-size: 28rpx;
+    color: #6D84DD;
+}
+
+.wrapper-view {
+    position: relative;
+}
+
+.moveLine {
+    background: #6D84DD;
+    width: 70px;
+    height: 6rpx;
+    position: absolute;
+    bottom: 0;
+    transition: all .3s;
+}

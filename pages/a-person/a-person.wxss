@@ -1,0 +1,170 @@
+.userinfo {
+    display: flex;
+    width: 250rpx;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 88rpx;
+    left: 250rpx;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx auto;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: hsla(0,0%,100%,.89);
+}
+
+.userinfo-phone {
+    color: #fff;
+    font-size: 30rpx;
+}
+
+.navigator-hover {
+    background: none;
+}
+
+.get-top {
+    position: relative;
+    left: -20%;
+}
+
+.mine_banner {
+    display: block;
+    width: 100%;
+    height: 470rpx;
+    background: url(//img.rekoon.cn/bgt.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    float: left;
+}
+
+.container {
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.mine-con {
+    width: 610rpx;
+    height: 200rpx;
+    box-shadow: 0 2rpx 8rpx 0 rgba(104,127,153,0.15);
+    position: relative;
+    top: -100rpx;
+    background: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mine-deal {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 206.5rpx;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.deal-img {
+    width: 80rpx;
+    height: 80rpx;
+    margin: auto;
+}
+
+.deal-img-three {
+    background: url("https://img.rekoon.cn/intergal/search/my_ic_sold@2x.png") no-repeat;
+    background-size: 80rpx auto;
+}
+
+.deal-img-two {
+    background: url("https://img.rekoon.cn/711205553.png") no-repeat;
+    background-size: 80rpx auto;
+}
+
+.deal-img-one {
+    background: url("https://img.rekoon.cn/180711204535.png") no-repeat;
+    background-size: 80rpx auto;
+}
+
+.center-line {
+    opacity: .2;
+    width: 3rpx;
+    background: #979797;
+    height: 86rpx;
+    position: absolute;
+    left: 50%;
+    top: 60rpx;
+}
+
+.deal-text {
+    line-height: 45rpx;
+    position: relative;
+    top: -30rpx;
+    font-size: 32rpx;
+    color: #6d6d6d;
+}
+
+.mine-pag {
+    width: 100%;
+    min-height: 500rpx;
+    margin-top: 37.5rpx;
+    position: relative;
+    top: -100rpx;
+}
+
+.mine-a {
+    display: block;
+    margin-left: 74rpx;
+    padding-top: 36.5rpx;
+    padding-bottom: 36.5rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    color: #6d6d6d;
+    width: 600rpx;
+    border-bottom: 1rpx solid #ececec;
+}
+
+.mine-a-noborder {
+    border: 0;
+}
+
+.a-icon {
+    display: inline-block;
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 24rpx;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2.25rpx;
+}
+
+.icon-text {
+    margin-right: 20rpx;
+    background: url(//shop-img.rekoon.cn/icon/ic_go.png) no-repeat;
+    background-position: 100%;
+    background-size: 20rpx 30rpx;
+    padding-right: 40rpx;
+    font-size: 26rpx;
+    color: #a1a1a1;
+    line-height: 50rpx;
+    float: right;
+}
+
+.icon-text-money {
+    font-size: 26rpx;
+    line-height: 50rpx;
+}
+
+.icon-set {
+    height: 55rpx;
+}
+
+.blue {
+}

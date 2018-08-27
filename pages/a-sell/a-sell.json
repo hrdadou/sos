@@ -1,0 +1,15 @@
+{
+    "navigationBarTitleText": "闲置换钱",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "division": "/components/division/division",
+        "contact-button": "/components/contact-button/contact-button",
+        "media-report": "/components/media-report/media-report",
+        "comment-home": "/components/comment-home/comment-home",
+        "sell-server-card": "/components/sell-server-card/sell-server-card",
+        "new-user": "/components/new-user/new-user",
+        "loads": "/components/loads/loads"
+    }
+}

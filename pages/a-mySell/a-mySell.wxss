@@ -1,0 +1,92 @@
+.item {
+    background: #fff;
+    margin-top: 20rpx;
+    padding: 15rpx 20rpx;
+    position: relative;
+}
+
+.top {
+    width: 100%;
+}
+
+.icon {
+    width: 8rpx;
+    height: 27rpx;
+    background: #565656;
+    top: 10rpx;
+    display: inline-block;
+    margin-right: 21rpx;
+}
+
+.num {
+    left: -200rpx;
+    display: inline-block;
+    margin-left: 5rpx;
+    vertical-align: middle;
+    height: 40rpx;
+    line-height: 36rpx;
+    font-size: 28rpx;
+    color: #666971;
+}
+
+.status {
+    font-size: 28rpx;
+    display: inline-block;
+    height: 40rpx;
+    line-height: 40rpx;
+    vertical-align: middle;
+    color: #f56f66;
+    position: absolute;
+    right: 10rpx;
+    top: 20rpx;
+}
+
+.middle {
+    width: 100%;
+    margin-top: 20rpx;
+    display: flex;
+}
+
+.middle image {
+    width: 140rpx;
+    height: 140rpx;
+    margin: 0 38rpx 0 10rpx;
+}
+
+.name {
+    height: 48rpx;
+    line-height: 48rpx;
+    font-size: 32rpx;
+    color: #565656;
+    margin-bottom: 52rpx;
+}
+
+.price {
+    height: 42rpx;
+    line-height: 42rpx;
+    font-size: 30rpx;
+    color: #565656;
+}
+
+.price text {
+    font-size: 26rpx;
+    color: #EC6F6A;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 170rpx;
+    height: 70rpx;
+    border: 1rpx solid #565656;
+    border-radius: 10rpx;
+    font-size: 26rpx;
+    color: #565656;
+    text-align: center;
+    line-height: 70rpx;
+    margin: 10rpx 0 20rpx 0;
+    right: 0;
+}

@@ -1,0 +1,58 @@
+<view class="wrapper">
+    <loads wx:if="{{showLoad}}"></loads>
+    <loads bg="{{0.5}}" wx:if="{{siginLoading}}"></loads>
+    <go-home></go-home>
+    <form-id bindfevent="godetail" class="details">
+        <view>明细</view>
+    </form-id>
+    <form-id bindfevent="swichClick" class="sigin-swich">
+        <view class="swichs">
+            <view>签到提醒</view>
+            <view class="swich-btn {{siginData.isSignRemind==1?'height':''}}">
+                <view class="circle"></view>
+            </view>
+        </view>
+    </form-id>
+    <view class="tops">
+        <view class="isSigin" wx:if="{{siginData.isSigin!=0}}">
+            <view>今日已领取<text>{{siginData.integral}}枚</text>焕熊章</view>
+            <view>通过完成任务，可赚更多焕熊章哦～</view>
+            <form-id bindfevent="toTask">
+                <button class="nowSignBtn more">赚更多</button>
+            </form-id>
+        </view>
+        <form-id bindfevent="nowSigin" wx:else>
+            <view class="nowSignBtn">立即领章</view>
+        </form-id>
+        <form-id bindfevent="showModel">
+            <view class="tipe">
+                <view>活动规则</view>
+                <view>
+                    <image src="https://img.rekoon.cn/jifen/ic_%3F.png"></image>
+                </view>
+            </view>
+        </form-id>
+        <sign-line siginData="{{siginData}}"></sign-line>
+        <view class="jifen-line">
+            <view>
+                <image src="https://img.rekoon.cn/jifens/ic_rekoon.png"></image>
+            </view>
+            <view>焕熊章可用于兑换各类全新数码产品</view>
+        </view>
+    </view>
+    <common-jifen goodsList="{{goodsList}}" title="热门好物"></common-jifen>
+    <over loads="{{loads}}" pageFlag="{{pageFlag}}"></over>
+    <pop-model id="modelPop" popType="center">
+        <view class="hasNone">
+            <image bindtap="closePop" class="closeimg" src="https://img.rekoon.cn/jifens/close.png"></image>
+            <view class="masker">
+                <view class="masker_title">活动规则</view>
+                <view class="masker_text">1.焕熊章可通过每日签到、邀请好友、买卖商品等方式获得</view>
+                <view class="masker_text">2.焕熊章只能用于兑换0元好物中的商品;</view>
+                <view class="masker_text">3.通过焕熊章兑换的商品需要支付邮费或使用免邮券抵扣邮费</view>
+                <view class="masker_text">4.在兑换商品确认出章后，若未支付邮费，订单将在12小时后取消并扣章20%</view>
+                <view class="masker_text">5.焕熊拥有焕熊章获取及兑换的最终解释权。平台有权限制有异常行为的用户。</view>
+            </view>
+        </view>
+    </pop-model>
+</view>

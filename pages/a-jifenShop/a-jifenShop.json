@@ -1,0 +1,17 @@
+{
+    "navigationBarTitleText": "焕熊",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "over": "/components/over/over",
+        "loads": "/components/loads/loads",
+        "new-user": "/components/new-user/new-user",
+        "tab-view": "/components/tab-view/tab-view",
+        "form-id": "/components/form-id/form-id",
+        "is-empty": "/components/is-empty/is-empty",
+        "pop-model": "/components/pop-model/pop-model",
+        "common-jifen": "/components/common-jifen/common-jifen",
+        "search-intergal": "/components/search-intergal/search-intergal"
+    }
+}

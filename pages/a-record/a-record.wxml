@@ -1,0 +1,9 @@
+<view class="lists">
+    <view class="item" wx:for="{{lists}}" wx:key="{{index}}">
+        <view class="left">
+            <view class="name">{{item.name}}</view>
+            <view class="time">{{item.time}}</view>
+        </view>
+        <view class="right">+{{item.num}}</view>
+    </view>
+</view>

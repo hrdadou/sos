@@ -1,0 +1,6 @@
+<view>
+    <image src="//img.rekoon.cn/xcx/pic_502.png"></image>
+    <form bindsubmit="submit" reportSubmit="true">
+        <button formType="submit" openType="contact">点击进入在线客服</button>
+    </form>
+</view>

@@ -1,0 +1,53 @@
+.wrapper {
+    width: 100%;
+    background: #fff;
+    color: #565656;
+}
+
+.adress-item {
+    width: 730rpx;
+    height: 120rpx;
+    margin-left: 20rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adress-item view:nth-child(1) view {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.adress-item view:nth-child(1) image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.adress-item view:nth-child(2) {
+    width: 75%;
+    font-size: 28rpx;
+}
+
+.adress-item view:nth-child(2) view:nth-child(2) {
+    width: 100%;
+    overflow: hidden;
+}
+
+.adress-item view:nth-child(3) {
+    font-size: 30rpx;
+    margin-right: 20rpx;
+}
+
+.add-adress {
+    width: 100%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    border-top: 1rpx solid #f0f0f0;
+}

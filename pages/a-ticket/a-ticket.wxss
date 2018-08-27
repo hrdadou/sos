@@ -1,0 +1,108 @@
+.rules {
+    width: 100%;
+    margin: 30rpx;
+    display: flex;
+}
+
+.rules image {
+    width: 24rpx;
+    height: 24rpx;
+}
+
+.rules .rules_text {
+    margin-left: 10rpx;
+    text-align: center;
+    line-height: 25rpx;
+    font-size: 24rpx;
+    color: #565656;
+    vertical-align: middle;
+}
+
+.list {
+    width: 691rpx;
+    height: 158rpx;
+    margin: 0 auto;
+    background: url("https://img.rekoon.cn/integra/mianyouqbg@2x.png") no-repeat;
+    background-size: 691rpx 158rpx;
+    display: flex;
+    align-items: center;
+}
+
+.list .ticket_name {
+    width: 132rpx;
+    height: 76rpx;
+    text-align: center;
+    line-height: 76rpx;
+    color: #fff;
+    font-size: 38rpx;
+    margin-left: 52rpx;
+}
+
+.validity {
+    margin: 0 20rpx 0 41rpx;
+}
+
+.validity .content {
+    font-size: 28rpx;
+    color: #565656;
+    height: 40rpx;
+    line-height: 40rpx;
+    margin-bottom: 15rpx;
+}
+
+.validity .time {
+    height: 33rpx;
+    line-height: 33rpx;
+    color: #808080;
+    font-size: 24rpx;
+    opacity: 0.67;
+}
+
+.use {
+    width: 100rpx;
+    height: 42rpx;
+    border-radius: 6rpx;
+    color: #3090CB;
+    border: .8px solid rgba(48,144,203,1);
+    font-size: 24rpx;
+    text-align: center;
+    line-height: 42rpx;
+    margin-left: 10rpx;
+}
+
+.hasNone {
+    width: 590rpx;
+    height: 400rpx;
+    border-radius: 10rpx;
+    background: #fff;
+    padding-top: 40rpx;
+}
+
+.hasNone .title {
+    width: 122rpx;
+    height: 42rpx;
+    line-height: 42rpx;
+    text-align: center;
+    margin: 0 auto 30rpx;
+    color: #565656;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
+.hasNone .text {
+    line-height: 46rpx;
+    font-size: 26rpx;
+    color: #6a6a6a;
+    margin: 0 69rpx 5rpx 53rpx;
+}
+
+.close {
+    width: 44rpx;
+    height: 44rpx;
+    margin: 0 0 20rpx 540rpx;
+}
+
+.close image {
+    width: 44rpx;
+    height: 44rpx;
+}

@@ -1,0 +1,148 @@
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 88rpx;
+    left: 310rpx;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: hsla(0,0%,100%,.89);
+}
+
+.get-top {
+    position: relative;
+    left: -20%;
+}
+
+.mine_banner {
+    display: block;
+    width: 100%;
+    height: 470rpx;
+    background: url(//shop-img.rekoon.cn/user/my_bg1.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    float: left;
+}
+
+.container {
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.mine-con {
+    width: 610rpx;
+    height: 200rpx;
+    position: relative;
+    top: -100rpx;
+    background: #fff;
+    z-index: 10;
+}
+
+.mine-deal {
+    width: 206.5rpx;
+    padding: 38rpx 0 0 97.5rpx;
+    height: 100%;
+    float: left;
+}
+
+.deal-img {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.deal-img-in {
+    background: url(//shop-img.rekoon.cn/icon/icon_wrap.png) no-repeat left -45rpx top 0;
+    background-size: 750rpx auto;
+}
+
+.deal-img-out {
+    background: url(//shop-img.rekoon.cn/icon/icon_wrap.png) no-repeat left -508.5rpx top 0;
+    background-size: 750rpx auto;
+}
+
+.center-line {
+    opacity: .2;
+    width: 3rpx;
+    background: #979797;
+    height: 86rpx;
+    position: absolute;
+    left: 50%;
+    top: 60rpx;
+}
+
+.deal-text {
+    line-height: 45rpx;
+    margin-top: 6rpx;
+    font-size: 32rpx;
+    color: #6d6d6d;
+}
+
+.mine-pag {
+    width: 100%;
+    min-height: 798rpx;
+    margin-top: 37.5rpx;
+    position: relative;
+    top: -100rpx;
+}
+
+.mine-a {
+    display: block;
+    margin-left: 74rpx;
+    padding-top: 36.5rpx;
+    padding-bottom: 36.5rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    color: #6d6d6d;
+    width: 600rpx;
+    border-bottom: 1rpx solid #ececec;
+}
+
+.mine-a-noborder {
+    border: 0;
+}
+
+.a-icon {
+    display: inline-block;
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 24rpx;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2.25rpx;
+}
+
+.icon-text {
+    margin-right: 20rpx;
+    background: url(//shop-img.rekoon.cn/icon/ic_go.png) no-repeat;
+    background-position: 100%;
+    background-size: 20rpx 30rpx;
+    padding-right: 40rpx;
+    font-size: 26rpx;
+    color: #a1a1a1;
+    line-height: 50rpx;
+    float: right;
+}
+
+.icon-text-money {
+    color: #6d84dd;
+    font-size: 26rpx;
+    line-height: 50rpx;
+}
+
+.icon-set {
+    height: 55rpx;
+}
+
+.blue {
+    color: #6d84dd;
+}

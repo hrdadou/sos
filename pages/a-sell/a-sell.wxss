@@ -1,0 +1,135 @@
+.wrapper {
+    width: 100%;
+    min-height: 1916rpx;
+    background: url('https://img.rekoon.cn/sell_interge/bg.png') no-repeat;
+    background-size: 100% 1916rpx;
+    padding-top: 1rpx;
+    box-sizing: border-box;
+}
+
+.sell-top {
+    width: 702rpx;
+    height: 310rpx;
+    margin: auto;
+    margin-top: 88rpx;
+    padding-top: 1rpx;
+    box-sizing: border-box;
+}
+
+.sell-text {
+    color: #565656;
+    font-size: 34rpx;
+    text-align: center;
+    margin-top: 36rpx;
+}
+
+.sell-en {
+    color: #A1A1A1;
+    font-size: 22rpx;
+    text-align: center;
+    margin-top: 8rpx;
+}
+
+.sell-lin-img {
+    width: 580rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 28rpx;
+}
+
+.sell-lin-img .big {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.sell-lin-img .small {
+    width: 44rpx;
+    height: 14rpx;
+}
+
+.text-flex {
+    width: 606rpx;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 26rpx;
+    color: #6a6a6a;
+    margin-top: 14rpx;
+}
+
+.select-model {
+    width: 668rpx;
+    margin: auto;
+    margin-top: 31rpx;
+}
+
+.imgWrpper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgWrpper image {
+    width: 184rpx;
+    height: 184rpx;
+}
+
+.select-model .textWrpper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 26rpx;
+    color: #686868;
+}
+
+.select-model .textWrpper view {
+    width: 184rpx;
+    text-align: center;
+}
+
+.box.baoz {
+    padding-bottom: 40rpx;
+}
+
+.box {
+    width: 702rpx;
+    background: rgba(255,255,255,0.84);
+    box-shadow: 0px 1rpx 14rpx 0rpx rgba(109,120,130,0.08);
+    border-radius: 8rpx;
+    margin: auto;
+    margin-top: 30rpx;
+    padding-top: 1rpx;
+    box-sizing: border-box;
+}
+
+.rich-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28rpx;
+}
+
+.rich-text .rich-item {
+    width: 270rpx;
+}
+
+.rich-title {
+    display: flex;
+    align-items: center;
+    color: #6a6a6a;
+    font-size: 30rpx;
+}
+
+.rich-title image {
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 16rpx;
+}
+
+.rich-info {
+    color: #808080;
+    font-size: 20rpx;
+    margin-top: 16rpx;
+}

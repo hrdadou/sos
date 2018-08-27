@@ -1,0 +1,166 @@
+<loads wx:if="{{showLoad}}"></loads>
+<view class="title">
+    <image src="https://img.rekoon.cn/jifens/ic_rekoon.png"></image>
+    <view class="text">当前拥有
+    <view>{{integral}}</view> 枚</view>
+    <view bindtap="record" class="detail">
+        <view>明细</view>
+    </view>
+    <view bindtap="activeRlues" class="rules">
+        <view>活动规则</view>
+    </view>
+</view>
+<scroll-view scrollWithAnimation scrollX class="scroll" scrollLeft="{{scrollLeft}}" style="width: 702rpx">
+    <view class="task-tab">
+        <view bindtap="selectThisTab" class="{{currentTab==item.id?'active':''}}" data-id="{{item.id}}" wx:for="{{titleList}}" wx:key="{{index}}">
+            <image src="{{currentTab==item.id?item.icon_h:item.icon}}"></image>
+            <text>{{item.name}}</text>
+        </view>
+        <view class="line a{{currentTab}}"></view>
+    </view>
+</scroll-view>
+<view class="fristBuy task" wx:if="{{currentTab==1}}" wx:for="{{taskList}}" wx:key="{{index}}">
+    <view class="fristBuy_left">
+        <view class="fristBuy_left_title">{{item.event_desc}}</view>
+        <view class="number">焕熊章
+      <view style="margin-left:10rpx">{{item.show_text}}</view>
+        </view>
+    </view>
+    <view wx:if="{{item.url!='disabled'&&item.url!=='wait'}}">
+        <button class="fristBuy_right" formType="submit" openType="contact" wx:if="{{item.event=='submitBug'&&item.url!='disabled'}}">{{item.button}}</button>
+        <button bindtap="toDoSomething" class="fristBuy_right {{item.id==23&&isSigin!=0?'grey':''}}" data-id="{{item.id}}" wx:else>{{item.id==23&&isSigin!=0?'今日已签到':item.button}}</button>
+    </view>
+    <view class="finshed" wx:if="{{item.url=='disabled'}}">{{item.button}}</view>
+    <view class="wait" wx:if="{{item.url=='wait'}}">{{item.button}}</view>
+</view>
+<block wx:if="{{false}}">
+    <view>
+        <view class="group-title">
+      日常任务
+    </view>
+        <view class="fristBuy" wx:for="{{buttonReadyList}}" wx:key="{{index}}">
+            <view class="fristBuy_left">
+                <view class="fristBuy_left_title">{{item.event_desc}}</view>
+                <view class="number">焕熊章
+          <view style="margin-left:10rpx">{{item.show_text}}</view>
+                </view>
+            </view>
+            <view wx:if="{{item.url!='disabled'&&item.url!=='wait'}}">
+                <button class="fristBuy_right" formType="submit" openType="contact" wx:if="{{item.event=='submitBug'&&item.url!='disabled'}}">{{item.button}}</button>
+                <button bindtap="toDoSomething" class="fristBuy_right {{item.id==23&&isSigin!=0?'grey':''}}" data-id="{{item.id}}" wx:else>{{item.id==23&&isSigin!=0?'今日已签到':item.button}}</button>
+            </view>
+            <view class="finshed" wx:if="{{item.url=='disabled'}}">{{item.button}}</view>
+            <view class="wait" wx:if="{{item.url=='wait'}}">{{item.button}}</view>
+        </view>
+    </view>
+    <view>
+        <view class="group-title">
+      待完成任务
+    </view>
+        <view class="fristBuy" wx:for="{{pendingTaskList}}" wx:key="{{index}}">
+            <view class="fristBuy_left">
+                <view class="fristBuy_left_title">{{item.event_desc}}</view>
+                <view class="number">焕熊章
+          <view style="margin-left:10rpx">{{item.show_text}}</view>
+                </view>
+            </view>
+            <view wx:if="{{item.url!='disabled'&&item.url!=='wait'}}">
+                <button class="fristBuy_right" formType="submit" openType="contact" wx:if="{{item.event=='submitBug'&&item.url!='disabled'}}">{{item.button}}</button>
+                <button bindtap="toDoSomething" class="fristBuy_right {{item.id==23&&isSigin!=0?'grey':''}}" data-id="{{item.id}}" wx:else>{{item.id==23&&isSigin!=0?'今日已签到':item.button}}</button>
+            </view>
+            <view class="finshed" wx:if="{{item.url=='disabled'}}">{{item.button}}</view>
+            <view class="wait" wx:if="{{item.url=='wait'}}">{{item.button}}</view>
+        </view>
+    </view>
+    <view>
+        <view class="group-title">
+      已完成
+    </view>
+        <view class="fristBuy" wx:for="{{readyTaskList}}" wx:key="{{index}}">
+            <view class="fristBuy_left">
+                <view class="fristBuy_left_title">{{item.event_desc}}</view>
+                <view class="number">焕熊章
+          <view style="margin-left:10rpx">{{item.show_text}}</view>
+                </view>
+            </view>
+            <view wx:if="{{item.url!='disabled'&&item.url!=='wait'}}">
+                <button class="fristBuy_right" formType="submit" openType="contact" wx:if="{{item.event=='submitBug'&&item.url!='disabled'}}">{{item.button}}</button>
+                <button bindtap="toDoSomething" class="fristBuy_right {{item.id==23&&isSigin!=0?'grey':''}}" data-id="{{item.id}}" wx:else>{{item.id==23&&isSigin!=0?'今日已签到':item.button}}</button>
+            </view>
+            <view class="finshed" wx:if="{{item.url=='disabled'}}">{{item.button}}</view>
+            <view class="wait" wx:if="{{item.url=='wait'}}">{{item.button}}</view>
+        </view>
+    </view>
+    <view style="margin-top: 20rpx; margin-bottom: 100rpx">
+        <view class="fristBuy" wx:for="{{lastList}}" wx:key="{{index}}">
+            <view class="fristBuy_left">
+                <view class="fristBuy_left_title">{{item.event_desc}}</view>
+                <view class="number">焕熊章
+          <view style="margin-left:10rpx">{{item.show_text}}</view>
+                </view>
+            </view>
+            <view wx:if="{{item.url!='disabled'&&item.url!=='wait'}}">
+                <button class="fristBuy_right" formType="submit" openType="contact" wx:if="{{item.event=='submitBug'&&item.url!='disabled'}}">{{item.button}}</button>
+                <button bindtap="toDoSomething" class="fristBuy_right {{item.id==23&&isSigin!=0?'grey':''}}" data-id="{{item.id}}" wx:else>{{item.id==23&&isSigin!=0?'今日已签到':item.button}}</button>
+            </view>
+            <view class="finshed" wx:if="{{item.url=='disabled'}}">{{item.button}}</view>
+            <view class="wait" wx:if="{{item.url=='wait'}}">{{item.button}}</view>
+        </view>
+    </view>
+</block>
+<view class="game-wrapper" wx:if="{{currentTab==2}}">
+    <view class="title-tips">
+        <image src="https://img.rekoon.cn/intergal/search/remind@2x.png"></image>
+        <text>首次试玩</text>
+        <text class="center">+{{gameIntergal}}枚</text>
+        <text>焕熊章</text>
+    </view>
+    <view class="list-game">
+        <navigator appId="{{item.status!=0?item.app_id:''}}" bindtap="handleGameCLick" class="game-item" data-gameid="{{item.id}}" data-status="{{item.status}}" extraData="{{item.game_params}}" hoverClass="hover" openType="navigate" path="{{item.game_url}}" target="miniProgram" wx:for="{{gameList}}" wx:key="{{index}}">
+            <image src="{{item.game_img}}"></image>
+            <view>{{item.game_name}}</view>
+        </navigator>
+    </view>
+</view>
+<view wx:if="{{currentTab==3}}">
+    <navigator appId="{{item.ad_appid}}" bindtap="dockingClick" class="task-item" data-appid="{{item.ad_appid}}" data-id="{{item.id}}" data-url="{{item.ad_path}}" extraData="{{extraGoods}}" hoverClass="hover" openType="navigate" path="{{item.ad_path}}" target="miniProgram" wx:for="{{bannerList}}" wx:key="{{index}}">
+        <view>
+            <image src="{{item.img_url}}"></image>
+        </view>
+        <view>
+            <view>{{item.app_name}}</view>
+            <view>{{item.event_desc}}</view>
+            <view>焕熊章<text> + {{item.number}}枚</text>
+            </view>
+        </view>
+        <view>{{item.button}}</view>
+    </navigator>
+</view>
+<pop-model id="modelPop">
+    <view class="models">
+        <view class="model-main">
+            <button bindtap="addClickSource" class="view" hoverClass="btn-hover" openType="share">
+                <image src="https://img.rekoon.cn/jifens/weixin.png"></image>
+                <text>发送链接给好友</text>
+            </button>
+            <button bindtap="gohaibao" class="view" hoverClass="btn-hover">
+                <image src="https://img.rekoon.cn/poster.png"></image>
+                <text>生成海报分享</text>
+            </button>
+        </view>
+        <view bindtap="hideenModel" class="btn-wrapper">
+      取消
+    </view>
+    </view>
+</pop-model>
+<view catchtap="closeActiveRlues" class="mask" hidden="{{maskFlag}}">
+    <view class="close_icon"></view>
+</view>
+<view class="masker" hidden="{{maskFlag}}">
+    <view class="masker_title">活动规则</view>
+    <view class="masker_text">1.焕熊章可通过每日签到、邀请好友、买卖商品等方式获得</view>
+    <view class="masker_text">2.焕熊章只能用于兑换0元好物中的商品;</view>
+    <view class="masker_text">3.通过焕熊章兑换的商品需要支付邮费或使用免邮券抵扣邮费</view>
+    <view class="masker_text">4.在兑换商品确认出章后，若未支付邮费，订单将在12小时后取消并扣章20%</view>
+    <view class="masker_text">5.焕熊拥有焕熊章获取及兑换的最终解释权。平台有权限制有异常行为的用户。</view>
+</view>

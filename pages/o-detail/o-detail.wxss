@@ -1,0 +1,42 @@
+.container {
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.swiper-box {
+    width: 100%;
+    height: 750rpx;
+}
+
+.top-tips {
+    width: 100%;
+    height: 66rpx;
+    background: #ff8e7a;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    box-sizing: border-box;
+    font-size: 26rpx;
+    color: hsla(0,0%,100%,.85);
+}
+
+.imgs {
+    display: inline-block;
+    width: 29rpx;
+    height: 22rpx;
+    background: url(//img.rekoon.cn/icon/buy/detail_ic_see.png) no-repeat;
+    background-size: 100%;
+}
+
+.mun {
+    margin: 0 10rpx;
+}
+
+.none {
+    top: -66rpx;
+}

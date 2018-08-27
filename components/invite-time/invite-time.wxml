@@ -1,0 +1,16 @@
+<view class="count">
+    <view class="div" wx:if="{{show==1}}">
+        <view class="span">{{timehour}}</view>
+        <view class="i">:</view>
+        <view class="span">{{timeminute}}</view>
+        <view class="i">:</view>
+        <view class="span last">{{timesecond}}</view>
+    </view>
+    <view class="div" wx:if="{{show==2}}">
+        <view class="span">00</view>
+        <view class="i">:</view>
+        <view class="span">00</view>
+        <view class="i">:</view>
+        <view class="span last">00</view>
+    </view>
+</view>

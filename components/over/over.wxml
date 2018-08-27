@@ -1,0 +1,8 @@
+<view class="over" wx:if="{{!loads}}"></view>
+<view class="spinner" wx:if="{{loads}}">
+    <view class="rect1 div"></view>
+    <view class="rect2 div"></view>
+    <view class="rect3 div"></view>
+    <view class="rect4 div"></view>
+    <view class="rect5 div"></view>
+</view>

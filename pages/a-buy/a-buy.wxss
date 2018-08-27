@@ -1,0 +1,286 @@
+.lbt {
+    background: #fff;
+    position: relative;
+}
+
+.hasNones {
+    position: relative;
+}
+
+.hasNones .img {
+    width: 590rpx;
+    height: 420rpx;
+}
+
+.hasNones .image {
+    width: 44rpx;
+    height: 44rpx;
+    position: absolute;
+    right: 0;
+    top: -54rpx;
+    display: block;
+}
+
+.swiper {
+    width: 100%;
+    height: 450rpx;
+    background: #fff;
+}
+
+.swiper .slide-image {
+    width: 94.6666%;
+    height: 94.6666%;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 2.666%;
+    border-radius: 10rpx;
+}
+
+.swiper .slide-image image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.indicators {
+    left: 50%;
+    bottom: 70rpx;
+    position: absolute;
+    height: 6rpx;
+    transform: translate3d(-50%,0,0);
+}
+
+.indicators .i {
+    display: inline-block;
+    width: 30rpx;
+    height: 4rpx;
+    margin: 0 5rpx;
+    background: rgba(0,0,0,0.20);
+}
+
+.indicators .i.active {
+    background: #fff;
+}
+
+heigh_price.wrpper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper-limit {
+    width: 702rpx;
+    background: #fff;
+    height: 70rpx;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-limit .main {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-limit .main .i {
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 10rpx;
+}
+
+.wrapper-limit .main .i image {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.wrapper-limit .main .span {
+    font-size: 24rpx;
+    color: #565656;
+    text-align: right;
+}
+
+.model-w {
+    padding-top: 20rpx;
+    background: #fff;
+}
+
+.model-content {
+    width: 702rpx;
+    margin: auto;
+    display: flex;
+    padding-bottom: 20rpx;
+    justify-content: space-between;
+}
+
+.model-contents {
+    width: 702rpx;
+    margin: auto;
+    display: flex;
+    padding-bottom: 20rpx;
+    justify-content: space-around;
+}
+
+.model-contents .model view {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.model-contents .model view image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.model-contents .model text {
+    font-size: 26rpx;
+    color: #565656;
+    width: 100%;
+    display: block;
+    margin-top: 10rpx;
+    text-align: center;
+}
+
+.model-content .model {
+    width: 341rpx;
+    height: 130rpx;
+}
+
+.model-content .model image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.ding-wrap {
+    width: 100%;
+    padding-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.dingy {
+    width: 702rpx;
+    height: 130rpx;
+    margin: auto;
+}
+
+.dingy image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.over {
+    width: 720rpx;
+    height: 40rpx;
+    background: url("https://shop-img.rekoon.cn/img/end.png") no-repeat;
+    background-size: 720rpx;
+    margin: 50rpx auto;
+}
+
+.buy-cart {
+    width: 84rpx;
+    height: 84rpx;
+    border-radius: 50%;
+    background: url("https://img.rekoon.cn/cart.png") no-repeat center;
+    background-size: 84rpx 84rpx;
+    position: fixed;
+    z-index: 1000;
+    bottom: 50rpx;
+    right: 50rpx;
+}
+
+.count {
+    float: right;
+    top: -84rpx;
+    width: 34rpx;
+    height: 34rpx;
+    background-color: #f5675e;
+    color: #fff;
+    z-index: 1001;
+    text-align: center;
+    line-height: 34rpx;
+    border-radius: 50%;
+    font-size: 20rpx;
+}
+
+.hasNone .button {
+    width: 336rpx;
+    height: 121rpx;
+    margin: auto;
+    margin-top: 50rpx;
+    background: url('https://img.rekoon.cn/jifens/sign_in_btn.png') no-repeat;
+    background-size: 100% 100%;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 92rpx;
+    color: #FFFFFF;
+}
+
+.text-none {
+    text-align: center;
+    font-size: 32rpx;
+    color: #565656;
+}
+
+.hasNone {
+    position: relative;
+    padding-top: 197rpx;
+    width: 590rpx;
+    background: url('https://img.rekoon.cn/jifen/pop_bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.hasNone image {
+    width: 44rpx;
+    height: 44rpx;
+    position: absolute;
+    right: 0;
+    top: -5rpx;
+    display: block;
+}
+
+.update-pop {
+    width: 590rpx;
+    background: rgba(255,255,255,1);
+    border-radius: 10rpx;
+    padding-top: 1rpx;
+    position: relative;
+    padding-bottom: 39rpx;
+}
+
+.update-pop .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37rpx;
+    margin-bottom: 19rpx;
+}
+
+.update-pop .title image {
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.update-pop .title .text {
+    font-size: 32rpx;
+    color: rgba(86,86,86,1);
+    line-height: 45rpx;
+}
+
+.update-pop .p {
+    padding: 0 45rpx;
+    box-sizing: border-box;
+    font-size: 26rpx;
+    color: rgba(106,106,106,1);
+    line-height: 39rpx;
+}
+
+.update-pop .close {
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: -70rpx;
+    right: 0;
+}

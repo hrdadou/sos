@@ -1,0 +1,13 @@
+{
+    "navigationBarTitleText": "免邮券拼团",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "common-jifen": "/components/common-jifen/common-jifen",
+        "pop-model": "/components/pop-model/pop-model",
+        "invite-time": "/components/invite-time/invite-time",
+        "loads": "/components/loads/loads",
+        "over": "/components/over/over"
+    }
+}

@@ -1,0 +1,16 @@
+<view class="wrapper" wx:if="{{list.length}}">
+    <view class="detail-item">
+        <view class="views" wx:for="{{list}}" wx:key="{{index}}">
+            <view class="left">
+                <view wx:if="{{item.rule_event=='submitBug'}}">反馈bug</view>
+                <view wx:else>{{item.event_desc}}</view>
+                <view>{{item.created_at}}</view>
+            </view>
+            <view class="right">
+                <text>{{item.number>=0?'+':''}}</text>{{item.number}}</view>
+        </view>
+    </view>
+    <over loads="{{loads}}" pageFlag="{{pageFlag}}" wx:if="{{list.length}}"></over>
+</view>
+<loads wx:if="{{showLoad}}"></loads>
+<is-empty bindclick="emptyClick" text="还没有明细记录哦~" url="https://img.rekoon.cn/180711200344.png" wx:if="{{list.length==0}}"></is-empty>

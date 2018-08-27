@@ -1,0 +1,68 @@
+<view class="wrap">
+    <view class="top">
+        <view class="topSearch">
+            <view class="serch-btn">
+                <view class="img">
+                    <image src="https://shop-img.rekoon.cn/img/sold_phonetype_search_ic.png"></image>
+                </view>
+                <input bindfocus="onFocus" bindinput="serachOnchange" placeholder="请输入你要搜索的机型" value="{{inputVal}}"></input>
+            </view>
+            <view bindtap="cancelSerch" class="cancel" wx:if="{{showSerch}}">取消</view>
+        </view>
+        <block wx:if="{{!showSerch}}">
+            <view class="type-select">
+                <view bindtap="typeSelectEvent" class="{{choose==item.type?'active':''}}" data-type="{{item.type}}" wx:for="{{chooseItems}}" wx:key="{{index}}">
+          {{item.name}}
+        </view>
+            </view>
+            <view class="move-wrap">
+                <view class="{{activeClass}}"></view>
+            </view>
+        </block>
+    </view>
+    <view class="select-content" wx:if="{{!showSerch}}">
+        <scroll-view scrollY class="left">
+            <view bindtap="modelClick" class="left-item {{brandId==item.brandId?'active':''}}" data-id="{{item.brandId}}" wx:for="{{modelList}}" wx:key="{{index}}">
+                <view class="img-w">
+                    <image src="{{item.imgUrl}}"></image>
+                </view>
+                <view class="model-name">{{item.name}}</view>
+            </view>
+        </scroll-view>
+        <scroll-view scrollY class="right">
+            <view style="min-height: 105%">
+                <view bindtap="goNext" class="right-line" data-b="{{item.brandId}}" data-n="{{item.name}}" data-q="{{item.quotedId}}" wx:for="{{modelDetailList}}" wx:key="{{index}}">
+                    <view class="icon">{{index+1}}</view>
+                    <view class="right-item">{{item.name}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view style="margin-top: 88rpx" wx:if="{{showSerch&&searchingList.length==0&&!noData}}">
+        <view class="serch-content">
+            <view class="hot-serch">热门搜索</view>
+            <view bindtap="hotClick" class="hot-item" data-quoted="{{item.quotedId}}" wx:for="{{hotModelList}}" wx:key="{{index}}">{{item.name}}</view>
+        </view>
+        <view class="serch-content">
+            <view class="hot-serch">历史记录</view>
+            <scroll-view scrollY class="hist">
+                <view bindtap="hotClick" class="search-histoary" data-quoted="{{item.quotedId}}" wx:for="{{histoaryList}}" wx:key="{{index}}">
+          {{item.name}}
+        </view>
+                <view bindtap="clearStorage" class="clear">
+          ——   清空历史记录   ——
+        </view>
+            </scroll-view>
+        </view>
+    </view>
+    <view class="searching" wx:if="{{searchingList.length&&showSerch}}">
+        <scroll-view>
+            <view bindtap="hotClick" data-quoted="{{item.quotedId}}" data-serach="1" wx:for="{{searchingList}}" wx:key="{{index}}">
+        {{item.name}}
+      </view>
+        </scroll-view>
+    </view>
+    <view class="nodata" wx:if="{{noData&&showSerch}}">
+    没有找到您搜索的型号...
+  </view>
+</view>

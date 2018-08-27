@@ -1,0 +1,69 @@
+<view class="wrpper">
+    <loads wx:if="{{showLoad}}"></loads>
+    <view class="lbt">
+        <swiper autoplay circular bindchange="_change" class="swiper" current="{{showIndex}}" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+            <swiper-item class="swiper-item" wx:for="{{imagesUrl_buy}}" wx:key="{{index}}">
+                <view class="slide-image">
+                    <image bindtap="clickImg" data-postUrl="{{item.mini_link}}" src="{{item.image}}"></image>
+                </view>
+            </swiper-item>
+        </swiper>
+        <view class="indicators" wx:if="{{imagesUrl_buy.length>1}}">
+            <view class="i {{index===showIndex?'active':''}}" wx:for="{{imagesUrl_buy}}" wx:key="{{index}}"></view>
+        </view>
+    </view>
+    <view style="background: #fff">
+        <view bindtap="hidden" class="wrapper-limit">
+            <view class="main" wx:for="{{limits}}" wx:key="index">
+                <view class="i">
+                    <image src="{{item.img}}"></image>
+                </view>
+                <view class="span">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="model-w">
+        <view class="model-content">
+            <view bindtap="modelPage" class="model" data-model="1">
+                <image src="https://img.rekoon.cn/jifen/apple.png"></image>
+            </view>
+            <view bindtap="modelPage" class="model" data-model="2">
+                <image src="https://img.rekoon.cn/jifen/android.png"></image>
+            </view>
+        </view>
+    </view>
+    <count-down items="{{hotSales}}" more="{{hotsBtn}}"></count-down>
+    <view bindtap="detailGo" class="ding-wrap">
+        <view class="dingy">
+            <image src="https://img.rekoon.cn/jifen/buy_home_pic_subscibe.png"></image>
+        </view>
+    </view>
+    <count-down detailUrl="/buy/search?show=all&type=timeDesc" items="{{newItems}}" more="{{newBtn}}" title="每晚上新" titleEng="Daily Arrivals"></count-down>
+    <comment-home buy data="{{commenList}}" satisfy="{{numbers}}" total="{{commenTotal}}"></comment-home>
+    <view class="over"></view>
+    <contact-button show="{{showContact}}"></contact-button>
+</view>
+<pop-model id="modelUpdate" popType="center">
+    <view class="update-pop">
+        <image bindtap="closeUpdate" class="close" src="https://img.rekoon.cn/integral/sold_details_speak_close_ic@2x.png"></image>
+        <view class="title">
+            <image src="https://img.rekoon.cn/integral/remind@2x.png"></image>
+            <view class="title-text">温馨提示</view>
+        </view>
+        <view class="p">尊敬的用户您好，</view>
+        <view class="p">因近期平台引入权威风控系统，识别到部分用户疑似采用欺诈方式邀请好友获得焕熊章，因此平台已对接公安系统，进行并完成了系统升级，升级结果可能会导致系统自动取消部分用户的兑换订单并返还所有积分，同时将在1~3天内原路退还已支付的全部邮费。</view>
+        <view class="p">在收到此通知后您可以开始重新兑换商品，但个别用户可能因风控结果会出现无法兑换商品的现象，我们将于本周五前处理完毕，届时一切将恢复正常，由此带来的不便深表歉意！</view>
+        <view class="p">我们会确保您今后的体验不会遇到相同问题！希望您一如既往的支持我们，我们也会努力为您提供最好的服务！</view>
+    </view>
+</pop-model>
+<view bindtap="buyCart" class="buy-cart">
+    <view class="count">{{count}}</view>
+</view>
+<new-user></new-user>
+<server-card bindhidden="hidden" show="{{posShow}}"></server-card>
+<pop-model id="modelPopInvite" popType="center">
+    <view class="hasNones">
+        <image bindtap="closeInvite" class="image" src="https://img.rekoon.cn/jifens/close.png"></image>
+        <image bindtap="goInviteInterge" class="img" src="https://img.rekoon.cn/integra/banner__.png"></image>
+    </view>
+</pop-model>

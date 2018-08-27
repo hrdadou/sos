@@ -1,0 +1,41 @@
+<view class="container">
+    <view class="wallet_box">
+        <view class="wallet_cashdrawal">
+            <view class="wallet-text">可用余额(元)</view>
+            <view class="wallet-number">{{availableBalance}}</view>
+        </view>
+        <view class="wallet_money_box">
+            <view class="wallet_money_box-left">
+                <view class="wallet-money-text">账户总额(元)</view>
+                <view class="wallet-money-number">{{amount}}</view>
+            </view>
+            <view class="wallet_money_box-right">
+                <view class="wallet-money-text">冻结金额(元)</view>
+                <view class="wallet-money-number">{{frozenBalance}}</view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="goDetail" class="van-call">
+        <view class="van-cell__title">
+            <view class="wallet_detail_btn"></view>
+        收支明细
+        <view class="van-cell__right-icon"></view>
+        </view>
+    </view>
+    <view class="btn-wrapper">
+        <view bindtap="topUp">充值</view>
+        <view bindtap="Withdraw">提现</view>
+    </view>
+    <view class="tixian-tips">
+        <image class="tip-icon" src="//shop-img.rekoon.cn/icon/login_remind_ic.png"></image>
+        <view>可立即提现到微信钱包</view>
+    </view>
+    <view class="open-model" wx:if="{{isOpen}}">
+        <view catchtap="closeModel" class="close-model"></view>
+        <view class="image-box">
+            <view class="erweima"></view>
+            <button catchtap="closeModel" class="up-button"></button>
+        </view>
+    </view>
+    <loads wx:if="{{ready}}"></loads>
+</view>

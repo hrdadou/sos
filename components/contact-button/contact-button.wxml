@@ -1,0 +1,3 @@
+<form bindsubmit="openContact" class="kefu {{show?'show':''}}" reportSubmit="true">
+    <button formType="submit" openType="contact"></button>
+</form>

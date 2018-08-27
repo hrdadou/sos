@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "免邮券",
+    "usingComponents": {
+        "pop-model": "/components/pop-model/pop-model",
+        "is-empty": "/components/is-empty/is-empty",
+        "over": "/components/over/over",
+        "loads": "/components/loads/loads"
+    }
+}

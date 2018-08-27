@@ -1,0 +1,5 @@
+<view>
+    <image bindload="imageLoad" bindtap="previw" src="{{url+'-w675h1200'}}" wx:if="{{url}}"></image>
+    <text>—— 点击海报保存并分享 ——</text>
+    <loads wx:if="{{loadReady}}"></loads>
+</view>

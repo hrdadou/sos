@@ -1,0 +1,24 @@
+.img {
+    width: 100%;
+    position: relative;
+}
+
+.img image {
+    width: 100%;
+}
+
+.sell {
+    background: #34343e;
+    color: #fff;
+    width: 375rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 30rpx;
+    margin: 95rpx auto 0;
+    text-align: center;
+    border-radius: 10rpx;
+    position: absolute;
+    z-index: 20;
+    top: 950rpx;
+    left: 195rpx;
+}

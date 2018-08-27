@@ -1,0 +1,138 @@
+<view class="wrapper">
+    <view class="content">
+        <view class="content-tips" wx:if="{{!options.team_id}}">
+      焕熊免邮券，一单一券最高减免18元；一天仅限使用一张；从领取日算起7天内有效；因个人原因取消订单退单不退券。
+    </view>
+        <view wx:else>
+            <block wx:if="{{teamInfos.team.status==1||teamInfos.team.status==0}}">
+                <view class="group-status" wx:if="{{teamInfos.team.status==1}}">
+                    <image src="https://img.rekoon.cn/integra/my_wallet_withdraw_deposit_succeed@2x.png"></image>
+                    <view>拼团成功</view>
+                </view>
+                <view class="group-status fail" wx:if="{{teamInfos.team.status==0}}">
+                    <image src="https://img.rekoon.cn/integra/my_wallet_withdraw_deposit_fail@2x.png"></image>
+                    <view>拼团失败</view>
+                </view>
+                <view class="success-tip" wx:if="{{GrounpStatus==7}}">你已是老用户，无法助力，快去自己开个团吧～</view>
+                <view class="success-tip" wx:if="{{teamInfos.team.status==1&&GrounpStatus==6}}">恭喜你获得一张免邮券！</view>
+                <view class="success-tip" wx:if="{{teamInfos.team.status==1&&GrounpStatus==3}}">你已助力成功，快去自己开个团吧～</view>
+                <view class="success-tip" wx:if="{{teamInfos.team.status==1&&GrounpStatus==5}}">你来晚啦，下次要赶早哦！快去自己开一团吧～</view>
+                <view class="success-tip" wx:if="{{teamInfos.team.status==0}}">未在规定时间凑足人数，再去开新的团吧！</view>
+            </block>
+            <view class="avator-wrapper">
+                <view class="imgs" wx:for="{{teamInfos.Members}}" wx:key="{{index}}">
+                    <image class="image" src="{{item.imgUrl}}"></image>
+                    <image class="header" src="https://img.rekoon.cn/integrals/invite.png" wx:if="{{index==0}}"></image>
+                </view>
+                <view class="null-img" wx:for="{{nullLength}}" wx:key="{{index}}">?</view>
+            </view>
+            <view class="people-text" wx:if="{{teamInfos.team.status==2}}">
+                <text wx:if="{{GrounpStatus==6}}">还差{{nullLength}}人成团，</text>
+                <text wx:if="{{GrounpStatus==2||GrounpStatus==3}}">你已助力，还差{{nullLength}}人成团，</text>
+                <text>距离结束还剩</text>
+                <invite-time timeOver="{{teamInfos.team.endtime*1000}}" wx:if="{{teamInfos.team.endtime}}"></invite-time>
+            </view>
+            <button class="button-invite" hoverClass="btn-hover" openType="share" wx:if="{{GrounpStatus==6&&teamInfos.team.status==2}}">邀请好友</button>
+            <block wx:else>
+                <view bindtap="memberCreateTeam" class="button-invite reset" wx:if="{{teamInfos.team.status!=2&&GrounpStatus==6}}">再去开团</view>
+                <view bindtap="memberCreateTeam" class="button-invite reset" wx:else>我也要开团</view>
+            </block>
+        </view>
+    </view>
+    <block wx:if="{{options.team_id}}">
+        <view class="box">
+            <view class="all-integel">
+                <view class="img">
+                    <image src="https://img.rekoon.cn/jifens/ic_rekoon.png"></image>
+                </view>
+                <view class="total-inte">你有焕熊章<text>{{totalJifen}}</text>枚</view>
+                <view bindtap="goTask" class="go-goods">去0元换好物</view>
+            </view>
+        </view>
+        <view class="box">
+            <view class="content-tips">
+        焕熊免邮券，一单一券最高减免18元；一天仅限使用一张；从领取日算起7天内有效；因个人原因取消订单退单不退券。
+      </view>
+        </view>
+    </block>
+    <view class="box">
+        <view class="active-title">
+            <view class="left flex-between">
+                <view></view>
+                <view>拼团玩法</view>
+            </view>
+            <view class="right flex-between">
+                <view bindtap="showModalHelp">查看详细规则</view>
+                <image src="https://img.rekoon.cn/integral/ic_go@2x.png"></image>
+            </view>
+        </view>
+        <view class="icon-list">
+            <view class="icon-wrapper">
+                <view class="img-w">
+                    <image src="https://img.rekoon.cn/integral/%E5%BC%80%E5%9B%A2@2x.png"></image>
+                </view>
+                <view class="img-l">
+                    <image src="https://img.rekoon.cn/integral/%E9%93%BE%E6%8E%A5@2x.png"></image>
+                </view>
+                <view class="img-w">
+                    <image src="https://img.rekoon.cn/integral/%E9%82%80%E6%96%B0@2x.png"></image>
+                </view>
+                <view class="img-l">
+                    <image src="https://img.rekoon.cn/integral/%E9%93%BE%E6%8E%A5@2x.png"></image>
+                </view>
+                <view class="img-w">
+                    <image src="https://img.rekoon.cn/integral/%E5%8C%85%E9%82%AE%E5%88%B8@2x.png"></image>
+                </view>
+            </view>
+            <view class="text-list">
+                <text>用户开团</text>
+                <text>邀请新用户成团</text>
+                <text>团长获得免邮券</text>
+            </view>
+        </view>
+    </view>
+    <common-jifen goodsList="{{goodsList}}" title="热门兑换"></common-jifen>
+    <over loads="{{loads}}" pageFlag="{{pageFlag}}"></over>
+    <view class="bottom"></view>
+    <view bindtap="toHome" class="botton-home" wx:if="{{options.team_id}}">回到首页</view>
+    <view class="bottom-button" wx:else>
+        <view bindtap="createTeamGroup" class="botton-w">30枚焕熊章开团</view>
+    </view>
+    <pop-model id="modelPop" popType="center">
+        <view class="hasNone">
+            <image bindtap="closeModal" src="https://img.rekoon.cn/jifens/close.png"></image>
+            <view class="pop-text">
+        助力成功！恭喜获得 <text>100枚</text> 焕熊章!
+      </view>
+            <view class="text-care">用焕熊章0元拿好物</view>
+            <view bindtap="toIntergelShop" class="pop-button"> 去使用 </view>
+        </view>
+    </pop-model>
+    <pop-model id="modelPopOldUser" popType="center">
+        <view class="hasNone">
+            <image bindtap="closeModal" src="https://img.rekoon.cn/jifens/close.png"></image>
+            <view class="pop-text">
+        抱歉，您已是老用户，无法
+      </view>
+            <view class="pop-text end">
+        帮Ta助力了
+      </view>
+            <view bindtap="memberCreateTeam" class="pop-button"> 我也要开团 </view>
+        </view>
+    </pop-model>
+    <pop-model id="modelHelp" popType="center">
+        <view class="help-wrapper">
+            <image bindtap="closeModalHelp" src="https://img.rekoon.cn/jifens/close.png"></image>
+            <view class="title">详细规则</view>
+            <view class="p">1.拼团有效期：自开团时刻起的24小时内；</view>
+            <view class="p">2.团长：拼团成功将获得免邮券一张</view>
+            <view class="p">3.新用户：首次使用焕熊小程序的用户，将获得100枚焕熊章新人奖励，也可再次开团</view>
+            <view class="p">4.拼团成功：在规定时间内凑足人数即可免费获得免邮券</view>
+            <view class="p">5.拼团失败：未在规定时间内凑足所需人数</view>
+        </view>
+    </pop-model>
+    <loads wx:if="{{ready}}"></loads>
+    <view wx:if="{{hideFMCanvas!=undefined&&!hideFMCanvas}}">
+        <canvas canvasId="tdcanvas" style="position: absolute; top: 200vh"></canvas>
+    </view>
+</view>

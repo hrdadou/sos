@@ -1,0 +1,90 @@
+.wrapper {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.asing-wraper {
+    background: #FAFAFA;
+    width: 100%;
+    height: 300rpx;
+    margin: auto;
+    display: flex;
+}
+
+.asigin-item {
+    width: 100rpx;
+    position: relative;
+}
+
+.asigin-item .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+}
+
+.ends {
+    width: 16rpx;
+    height: 16rpx;
+    background: #D5D5D5;
+    position: relative;
+    z-index: 9;
+    border-radius: 10rpx;
+}
+
+.line {
+    width: 100%;
+    height: 4rpx;
+    background: #D5D5D5;
+    position: absolute;
+    top: 50%;
+    margin-top: -2rpx;
+    right: 50%;
+}
+
+.today {
+    font-size: 26rpx;
+    color: #565656;
+    line-height: 40rpx;
+    margin-top: 20rpx;
+    letter-spacing: 0.66rpx;
+}
+
+.nums {
+    font-size: 22rpx;
+    color: #DC3535;
+    letter-spacing: 0.56rpx;
+    line-height: 45rpx;
+    margin-bottom: 10rpx;
+    width: 96rpx;
+    height: 50rpx;
+    text-align: center;
+}
+
+.nums.height {
+    background: url('https://img.rekoon.cn/jifen/bubble_bg.png') no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.asigin-item {
+    display: flex;
+    align-items: center;
+}
+
+.asigin-item.active .ends {
+    background: #FFD5D3;
+}
+
+.asigin-item.active .ends.height {
+    background: #E35E57;
+}
+
+.asigin-item .today.active {
+    color: #E35E57;
+}
+
+.asigin-item.active .line {
+    background: #FFD5D3;
+}

@@ -1,0 +1,47 @@
+image {
+    width: 140rpx;
+    height: 140rpx;
+    display: block;
+    margin: auto;
+    margin-top: 100rpx;
+}
+
+.title {
+    font-size: 38rpx;
+    color: #444444;
+    text-align: center;
+    line-height: 50rpx;
+    margin-top: 20rpx;
+}
+
+.line {
+    width: 630rpx;
+    margin: auto;
+    height: 1px;
+    background: #e7e7e7;
+    margin-top: 50rpx;
+}
+
+.quern {
+    font-size: 32rpx;
+    color: #444444;
+    margin-top: 50rpx;
+    text-align: center;
+}
+
+.info {
+    font-size: 28rpx;
+    color: #808080;
+    text-align: center;
+    margin-top: 30rpx;
+}
+
+button {
+    background: #00bf00;
+    color: #fff;
+    font-size: 30rpx;
+    width: 630rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    margin-top: 90rpx;
+}

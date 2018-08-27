@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "评论详情",
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "comment-star": "/components/comment-star/star",
+        "loads": "/components/loads/loads"
+    }
+}

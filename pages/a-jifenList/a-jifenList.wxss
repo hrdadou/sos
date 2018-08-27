@@ -1,0 +1,81 @@
+.list-item {
+    width: 100%;
+    height: 200rpx;
+    box-sizing: border-box;
+    display: flex;
+    padding: 30rpx;
+    margin-top: 20rpx;
+    background: #fff;
+    justify-content: space-between;
+}
+
+.goods-img {
+    border: 1rpx solid #F1F1F1;
+    border-radius: 10rpx;
+    overflow: hidden;
+    width: 140rpx;
+    height: 140rpx;
+}
+
+.goods-img image {
+    width: 100%;
+    height: 100%;
+}
+
+.status {
+    width: 150rpx;
+    font-size: 26rpx;
+    color: #DD5852;
+    text-align: right;
+}
+
+.status.grey {
+    color: #a1a1a1;
+}
+
+.item-info {
+    width: 350rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-info view:nth-child(1) {
+    font-size: 32rpx;
+    height: 40rpx;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 400rpx;
+    color: #565656;
+}
+
+.item-info view:nth-child(2) {
+    height: 40rpx;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 400rpx;
+    font-size: 24rpx;
+    color: #808080;
+    letter-spacing: 0.61rpx;
+    line-height: 40rpx;
+}
+
+.item-info view:nth-child(3) view {
+    font-size: 28rpx;
+    color: #DD5852;
+}
+
+.item-info view:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.item-info view:nth-child(3) image {
+    width: 40rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}

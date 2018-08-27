@@ -1,0 +1,13 @@
+<navigator hoverClass="navigator-hover" url="/pages/s-order-detail/s-order-detail">卖单详情</navigator>
+<view class="container">
+    <view class="top-tips {{isOpen?'':none}}">
+        <view class="mains">
+            <text class="imgs">
+                <image alt="" src="//img.rekoon.cn/icon/buy/detail_ic_see.png"></image>
+            </text>
+            <text class="mun">{{nowSeeNumber}}</text>
+            <text>人正在浏览本商品</text>
+        </view>
+    </view>
+    <view class="swiper-box"></view>
+</view>

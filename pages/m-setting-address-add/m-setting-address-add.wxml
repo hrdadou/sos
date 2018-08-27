@@ -1,0 +1,5 @@
+<navigator hoverClass="navigator-hover" url="/pages/s-order-detail/s-order-detail">手机号绑定</navigator>
+<navigator hoverClass="navigator-hover" url="/pages/s-order-detail/s-order-detail">地址管理</navigator>
+<navigator hoverClass="navigator-hover" url="/pages/s-order-detail/s-order-detail">邀请码</navigator>
+<navigator hoverClass="navigator-hover" url="/pages/s-order-detail/s-order-detail">意见反馈</navigator>
+<navigator hoverClass="navigator-hover" url="/pages/s-order-detail/s-order-detail">关于焕熊</navigator>

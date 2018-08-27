@@ -1,0 +1,6 @@
+<view>
+    <web-view bindmessage="bindGetMsg" src="{{webUrl}}" wx:if="{{webUrl}}"></web-view>
+</view>
+<view wx:if="{{hideFMCanvas!=undefined&&!hideFMCanvas}}">
+    <canvas canvasId="tdcanvas" style="position: absolute; top: 200vh"></canvas>
+</view>

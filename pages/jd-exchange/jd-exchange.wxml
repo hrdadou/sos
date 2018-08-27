@@ -1,0 +1,36 @@
+<view class="wrapper">
+    <view class="bt-open">
+        <view class="bt-title">
+            <image src="https://img.rekoon.cn/integra/Combined%20Shape1@2x.png"></image>
+            <text>开通白条</text>
+            <image src="https://img.rekoon.cn/integra/Combined%20Shape%20Copy1@2x.png"></image>
+        </view>
+        <image class="icons" src="https://img.rekoon.cn/integra/pic_pay@2x.png"></image>
+        <image class="arrow" src="https://img.rekoon.cn/integra/ic_arrow@2x.png"></image>
+        <view bindtap="openBt" class="btn">立即开通</view>
+    </view>
+    <view class="bt-open bottom">
+        <view class="bt-title">
+            <image src="https://img.rekoon.cn/integra/Combined%20Shape1@2x.png"></image>
+            <text>焕熊章领取方式</text>
+            <image src="https://img.rekoon.cn/integra/Combined%20Shape%20Copy1@2x.png"></image>
+        </view>
+        <view class="tip-jd">
+            <text>开通后获取兑换序列号:</text>
+            <text>京东金融App</text>
+            <image src="https://img.rekoon.cn/integra/jd_version/webs/sold_ic_arrow@2x.png"></image>
+            <text class="sec">我</text>
+            <image class="sec" src="https://img.rekoon.cn/integra/jd_version/webs/sold_ic_arrow@2x.png"></image>
+            <text>我的卡券</text>
+            <image src="https://img.rekoon.cn/integra/jd_version/webs/sold_ic_arrow@2x.png"></image>
+            <text>优惠券</text>
+            <image src="https://img.rekoon.cn/integra/jd_version/webs/sold_ic_arrow@2x.png"></image>
+            <text>其他</text>
+            <image src="https://img.rekoon.cn/integra/jd_version/webs/sold_ic_arrow@2x.png"></image>
+            <text>复制序列号</text>
+        </view>
+        <input bindinput="onchange" confirmType="done" placeholder="请粘贴序列号" placeholderStyle="color: #a1a1a1" type="text" value="{{codeNum}}"></input>
+        <view bindtap="ImmediatelyToReceive" class="btn {{codeNum.length?'receive':'disble'}}">立即领取</view>
+    </view>
+    <loads bg="{{0.5}}" wx:if="{{siginLoading}}"></loads>
+</view>

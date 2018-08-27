@@ -1,0 +1,35 @@
+.count {
+    width: 120rpx;
+    margin-left: 10rpx;
+    height: 40rpx;
+    display: inline-block;
+}
+
+.count .i {
+    color: #E24C42;
+    display: inline-block;
+    width: 10rpx;
+}
+
+.count .div {
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    color: #E24C42;
+    text-align: center;
+}
+
+.count .div .h1 {
+    font-size: 24rpx;
+    display: inline-block;
+}
+
+.count .div .span {
+    display: inline-block;
+    height: 40rpx;
+    border-radius: 6rpx;
+    font-size: 26rpx;
+}
+
+.count .div .span.last {
+}

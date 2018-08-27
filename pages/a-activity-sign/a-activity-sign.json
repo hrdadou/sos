@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "签到",
+    "usingComponents": {
+        "sign-line": "/components/sign-line/sign-line",
+        "common-jifen": "/components/common-jifen/common-jifen",
+        "pop-model": "/components/pop-model/pop-model",
+        "form-id": "/components/form-id/form-id",
+        "over": "/components/over/over",
+        "loads": "/components/loads/loads",
+        "go-home": "/components/go-home/go-home"
+    }
+}

@@ -1,0 +1,27 @@
+<view bindtap="rules" class="rules">
+    <image src="https://img.rekoon.cn/my_ic__.png"></image>
+    <view class="rules_text">使用规则</view>
+</view>
+<view bindtap="use" class="list" wx:for="{{ticketLists}}" wx:key="{{item.index}}">
+    <view class="ticket_name"></view>
+    <view class="validity">
+        <view class="content">一单一券最高减免{{item.max_value}}元</view>
+        <view class="time">有效期至{{item.expire_time}}</view>
+    </view>
+    <view class="use">去使用</view>
+</view>
+<is-empty show bindclick="emptyClick" btn="立即拼团领免邮券" text="您没有可用的免邮券~" url="https://img.rekoon.cn/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180711200335.png" wx:if="{{ticketLists.length==0}}"></is-empty>
+<pop-model id="modelPop" popType="center">
+    <view bindtap="closePop" class="close">
+        <image src="https://img.rekoon.cn/close.png"></image>
+    </view>
+    <view class="hasNone">
+        <view class="title">活动规则</view>
+        <view class="text">1. 一单一券最高减免18元；部分偏远地区无法使用</view>
+        <view class="text">2. 一天仅限使用一张；</view>
+        <view class="text">3. 从领取日算起7天内有效；</view>
+        <view class="text">4. 因个人原因取消订单退单不退券。</view>
+    </view>
+</pop-model>
+<over loads="{{loads}}" wx:if="{{ticketLists.length}}"></over>
+<loads wx:if="{{showLoad}}"></loads>

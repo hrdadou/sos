@@ -1,0 +1,128 @@
+.bt-open {
+    width: 702rpx;
+    height: 462rpx;
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 2rpx 7rpx 0rpx rgba(235,235,235,0.2);
+    border-radius: 8rpx;
+    margin: auto;
+    margin-top: 22rpx;
+    padding-top: 1rpx;
+    box-sizing: border-box;
+}
+
+.bottom {
+    height: 462rpx;
+    margin-top: 40rpx;
+}
+
+.bt-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+    font-size: 34rpx;
+    margin-top: 30rpx;
+}
+
+.bt-title image {
+    width: 74rpx;
+    height: 19rpx;
+}
+
+.bt-title text {
+    display: block;
+    margin: 0 16rpx;
+}
+
+.icons {
+    width: 171rpx;
+    height: 145rpx;
+    margin: auto;
+    margin-top: 25rpx;
+    display: block;
+}
+
+.arrow {
+    width: 40rpx;
+    height: 40rpx;
+    display: block;
+    margin: auto;
+    margin-top: 21rpx;
+}
+
+.btn {
+    width: 296rpx;
+    height: 84rpx;
+    line-height: 84rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #fff;
+    background: linear-gradient(125.3deg,rgba(227,104,95,1),rgba(227,78,70,1));
+    box-shadow: 0px 5rpx 7rpx 0rpx rgba(227,94,87,0.21);
+    border-radius: 100rpx;
+    margin: auto;
+    margin-top: 30rpx;
+}
+
+.disble {
+    background: rgba(216,216,216,1);
+    box-shadow: 0px 0 0 #fff;
+}
+
+.receive {
+    background: #34343E;
+    box-shadow: 0px 5rpx 7rpx 0rpx #ccc;
+}
+
+.tips {
+    text-align: center;
+    font-size: 26rpx;
+    color: rgba(106,106,106,1);
+    margin-top: 28rpx;
+}
+
+input {
+    margin: auto;
+    margin-top: 24rpx;
+    text-align: center;
+    color: #565656;
+    font-size: 28rpx;
+    width: 622rpx;
+    height: 90rpx;
+    background: rgba(248,248,248,1);
+    border-radius: 8rpx;
+    border: .8px solid rgba(241,241,241,1);
+}
+
+.tip-jd {
+    padding: 0 99rpx;
+    margin-top: 15rpx;
+}
+
+.tip-jd text.sec {
+    margin-right: 10rpx;
+}
+
+.tip-jd text:nth-child(1) {
+    margin-right: 24rpx;
+    font-size: 25rpx;
+    color: #939393;
+}
+
+.tip-jd image {
+    margin: 0 5rpx;
+    display: inline-block;
+    width: 22rpx;
+    height: 22rpx;
+    position: relative;
+    top: 3rpx;
+}
+
+.tip-jd image.sec {
+    margin-left: 0;
+}
+
+.tip-jd text {
+    color: #6a6a6a;
+    font-size: 26rpx;
+}

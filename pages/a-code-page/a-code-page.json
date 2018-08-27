@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "邀请海报",
+    "usingComponents": {
+        "loads": "/components/loads/loads"
+    }
+}

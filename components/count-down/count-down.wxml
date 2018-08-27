@@ -1,0 +1,40 @@
+<view class="count-wrapper" wx:if="{{items.length>0}}">
+    <view class="h1 tit">
+        <view class="p main-title">{{title}}</view>
+        <view class="subtitle">{{titleEng}}</view>
+        <view bindtap="goMore" class="view tit-many">
+            <view class="em">全部</view>
+            <view class="i">
+                <image src="https://img.rekoon.cn/newHome/arrow_ic.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="scroll-wrapper">
+        <view class="scroll-line">
+            <form bindsubmit="goDetail" class="scroll-item" data-productId="{{item.productId}}" data-quotedId="{{item.quotedId}}" reportSubmit="true" wx:for="{{items}}" wx:key="index">
+                <button class="button-formid" formType="submit" hoverClass="btn-hover">
+                    <time-down timeOver="{{item.overTime}}" wx:if="{{title=='限时优惠'}}"></time-down>
+                    <view style="height: 30rpx" wx:else></view>
+                    <view class="scroll-img">
+                        <image src="{{item.imgUrl+'-w224.h224'}}"></image>
+                        <view class="right-icon">{{item.chengse}}</view>
+                    </view>
+                    <view class="modelName">{{item.modelName}}</view>
+                    <view class="text">{{item.rongliang}} {{item.yanse}}</view>
+                    <view class="price-phone">
+                        <view class="h3">
+                            <view class="first-price">
+                                <view class="rmb">￥</view>
+                                <view class="priceRmb">{{item.price}}</view>
+                            </view>
+                            <view class="over-price" wx:if="{{title=='限时优惠'}}">已降{{item.discount}}</view>
+                        </view>
+                    </view>
+                </button>
+            </form>
+        </view>
+        <view bindtap="goMore" class="p more-botoom" wx:if="{{more}}">
+      查看全部  ＞
+    </view>
+    </view>
+</view>

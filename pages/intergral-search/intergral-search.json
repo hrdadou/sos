@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "搜索",
+    "usingComponents": {
+        "common-jifen": "/components/common-jifen/common-jifen",
+        "over": "/components/over/over",
+        "pop-model": "/components/pop-model/pop-model",
+        "is-empty": "/components/is-empty/is-empty",
+        "loads": "/components/loads/loads"
+    }
+}

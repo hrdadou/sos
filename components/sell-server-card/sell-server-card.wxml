@@ -1,0 +1,38 @@
+<view>
+    <view class="ul hidden min-auto {{show?'active':''}}">
+        <view bindtap="_posclick" class="poscl"></view>
+        <view bindtap="_posclick" class="clocs">
+            <image src="https://shop-img.rekoon.cn/img/buy_ic_close_checkstand.png"></image>
+        </view>
+        <view class="ul-li">
+            <view class="div">
+                <image class="img img-left" src="https://shop-img.rekoon.cn/img/detail_zhuangshi.png"></image>
+                <view class="h1">服务保障</view>
+                <image alt="" class="img-right" src="https://shop-img.rekoon.cn/img/detail_zhuangshi1.png"></image>
+            </view>
+        </view>
+        <view class="ol server">
+            <view class="div">
+                <view class="h3">
+                    <image src="https://img.rekoon.cn/sold_safeguard_5.png"></image>5天保价</view>
+                <view class="p">从估价下单到焕熊收货期间，按当时商品价值，超长5天保价</view>
+            </view>
+            <view class="div">
+                <view class="h3">
+                    <image src="https://img.rekoon.cn/sold_safeguard_3.png"></image>3天保卖</view>
+                <view class="p">利用平台资源整合优势，保证商品上架后3天内极速售出变现</view>
+            </view>
+            <view class="div">
+                <view class="h3">
+                    <image src="https://img.rekoon.cn/sold_safeguard_sf.png"></image>顺丰上门</view>
+                <view class="p">估计后在线预约，顺丰免费上门取件</view>
+            </view>
+            <view class="div">
+                <view class="h3">
+                    <image src="https://img.rekoon.cn/sold_safeguard_safe.png"></image>安全托管</view>
+                <view class="p">收到的商品将由专业工程师质检认证，彻底清除残留数据，保护隐私</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view bindtap="_posclick" class="pos {{show?'active':''}}"></view>

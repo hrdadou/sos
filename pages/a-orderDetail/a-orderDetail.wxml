@@ -1,0 +1,130 @@
+<view class="top_cancel" wx:if="{{statusNum==9}}">
+    <view class="orderCancel">
+        <image src="https://img.rekoon.cn/detail_ic_h.png"></image>
+    </view>
+    <view class="text">订单已取消，已扣章{{orderInfo.deduct||0}}枚</view>
+</view>
+<view class="orderStatus" wx:else>
+    <view class="top">
+        <view class="buyed">
+            <view class="img" wx:if="{{status.paixia}}">
+                <image src="https://img.rekoon.cn/detail_ic_h1.png"></image>
+            </view>
+            <view class="img" wx:else>
+                <image src="https://img.rekoon.cn/180709203129.png"></image>
+            </view>
+            <view class="text">已拍下</view>
+        </view>
+        <view class="cutLine"></view>
+        <view class="payment">
+            <view class="img" wx:if="{{status.payed}}">
+                <image src="https://img.rekoon.cn/detail_ic_h2.png"></image>
+            </view>
+            <view class="img" wx:else>
+                <image src="https://img.rekoon.cn/detail_ic_n2.png"></image>
+            </view>
+            <view class="text">已付款</view>
+        </view>
+        <view class="cutLine"></view>
+        <view class="delivery">
+            <view class="img" wx:if="{{status.sended}}">
+                <image src="https://img.rekoon.cn/detail_ic_h3.png"></image>
+            </view>
+            <view class="img" wx:else>
+                <image src="https://img.rekoon.cn/detail_ic_n3.png"></image>
+            </view>
+            <view class="text">已发货</view>
+        </view>
+        <view class="cutLine"></view>
+        <view class="finished">
+            <view class="img" wx:if="{{status.finished}}">
+                <image src="https://img.rekoon.cn/detail_ic_h4.png"></image>
+            </view>
+            <view class="img" wx:else>
+                <image src="https://img.rekoon.cn/detail_ic_n4.png"></image>
+            </view>
+            <view class="text">已完成</view>
+        </view>
+    </view>
+    <view class="btn-wrapper" wx:if="{{selfPay||ticket}}">
+        <view bindtap="submit" class="btn">去支付邮费: {{orderInfo.price}}元</view>
+        <view bindtap="useCollage" class="btn">使用免邮券</view>
+    </view>
+    <view bindtap="confirm" class="btn" wx:if="{{status.confirm}}">确认收货</view>
+    <view class="bottom" wx:if="{{!status.payed}}">拍下后若未支付邮费，订单将在12小时后自动取消，同时扣章20%哦~</view>
+</view>
+<view bindtap="toDetail" class="product">
+    <view class="left">
+        <view class="img">
+            <image src="{{'https://img.rekoon.cn'+orderInfo.goodsinfo.image}}" wx:if="{{orderInfo.goodsinfo}}"></image>
+        </view>
+        <view class="describe">
+            <view class="name">{{orderInfo.goodsinfo.title}}</view>
+            <view class="detail">{{orderInfo.goodsinfo.content}}</view>
+        </view>
+    </view>
+    <view class="arrow">
+        <image src="https://img.rekoon.cn/arrow111.png"></image>
+    </view>
+</view>
+<view class="address">
+    <view class="address_top">
+        <view class="name">{{orderInfo.address.name}}</view>
+        <view class="phone">{{orderInfo.address.phone}}</view>
+        <view wx:if="{{orderInfo.status==9}}"></view>
+    </view>
+    <view class="addressInfo">{{orderInfo.address.provinceName}}{{orderInfo.address.cityName}}{{orderInfo.address.countyName}}{{orderInfo.address.details}}</view>
+    <view class="cutLine">
+        <image src="https://img.rekoon.cn/cutLIne.png"></image>
+    </view>
+</view>
+<view class="orderInfo">
+    <view class="item">
+        <view class="text">支付焕熊章:</view>
+        <view class="num">{{orderInfo.coruscate_bear}}</view>
+    </view>
+    <view class="item">
+        <view class="text">订单编号:</view>
+        <view class="num">{{orderInfo.integral_number}}</view>
+    </view>
+    <view class="item" wx:if="{{orderInfo.ShipoerName}}">
+        <view class="text">物流公司:</view>
+        <view class="num">{{orderInfo.ShipoerName}}</view>
+    </view>
+    <view class="item" wx:if="{{orderInfo.LogisticCode>0}}">
+        <view class="text">快递单号:</view>
+        <view class="num">{{orderInfo.LogisticCode}}</view>
+    </view>
+    <view class="item">
+        <view class="text">下单时间:</view>
+        <view class="num">{{orderInfo.created_at}}</view>
+    </view>
+</view>
+<view bindtap="gohome" class="home">
+    <image src="https://img.rekoon.cn/ic_backhome.png"></image>
+</view>
+<contact-button show="{{showContact}}"></contact-button>
+<pop-model id="modelPop" popType="center">
+    <view bindtap="closePop" class="close">
+        <image src="https://img.rekoon.cn/close.png"></image>
+    </view>
+    <view class="hasNone">
+        <image bindtap="closePop" src="https://img.rekoon.cn/my_wallet_withdraw_deposit_fail.png"></image>
+        <view class="text-none">
+        支付失败
+      </view>
+        <view bindtap="closePop" class="button">
+        我知道了
+      </view>
+    </view>
+</pop-model>
+<pop-model id="modelPopHasNoCollage" popType="center">
+    <view class="modal-wrapper">
+        <view class="text">你有0张免邮券，立即拼团领取</view>
+        <view class="bottoms">
+            <view bindtap="cancel">取消</view>
+            <view bindtap="goInviteCollage">去开团</view>
+        </view>
+    </view>
+</pop-model>
+<loads wx:if="{{!orderInfo.address}}"></loads>

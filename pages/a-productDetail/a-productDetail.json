@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "商品详情",
+    "usingComponents": {
+        "common-jifen": "/components/common-jifen/common-jifen",
+        "pop-model": "/components/pop-model/pop-model",
+        "bind-phone": "/components/bind-phone/bind-phone",
+        "over": "/components/over/over",
+        "loads": "/components/loads/loads"
+    }
+}

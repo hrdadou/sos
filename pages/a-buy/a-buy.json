@@ -1,0 +1,18 @@
+{
+    "navigationBarTitleText": "二手好物",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "home-swiper": "/components/home-swiper/home-swiper",
+        "contact-button": "/components/contact-button/contact-button",
+        "count-down": "/components/count-down/count-down",
+        "comment-home": "/components/comment-home/comment-home",
+        "media-report": "/components/media-report/media-report",
+        "server-card": "/components/server-card/server-card",
+        "form-id": "/components/form-id/form-id",
+        "pop-model": "/components/pop-model/pop-model",
+        "new-user": "/components/new-user/new-user",
+        "loads": "/components/loads/loads"
+    }
+}

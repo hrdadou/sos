@@ -1,0 +1,63 @@
+.over {
+    width: 720rpx;
+    height: 40rpx;
+    background: url("https://shop-img.rekoon.cn/img/end.png") no-repeat;
+    background-size: 720rpx 40rpx;
+    margin: auto;
+    padding-bottom: 50rpx;
+    margin-top: 50rpx;
+}
+
+.spinner {
+    margin: auto;
+    width: 100rpx;
+    margin-top: 50rpx;
+    height: 130rpx;
+    text-align: center;
+    font-size: 10rpx;
+}
+
+.spinner>.div {
+    background-color: #9fa9a9;
+    height: 60rpx;
+    width: 6rpx;
+    display: inline-block;
+    margin: 5rpx;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%,40%,100% {
+        -webkit-transform: scaleY(0.4);
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+@keyframes stretchdelay {
+    0%,40%,100% {
+        transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1.0);
+    }
+}

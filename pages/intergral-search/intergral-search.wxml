@@ -1,0 +1,12 @@
+<view class="wrapper">
+    <view class="top-search">
+        <view class="search-wrapper">
+            <image class="search" src="https://img.rekoon.cn/intergal/search/Shape@2x.png"></image>
+            <input focus bindconfirm="searchGoods" bindinput="onchange" placeholder="搜索0元好物" placeholderStyle="color: #a1a1a1" value="{{searchVal}}"></input>
+            <image bindtap="clearSearchVal" class="clear" src="https://img.rekoon.cn/intergal/search/shanchu.png" wx:if="{{searchVal.length>0}}"></image>
+        </view>
+    </view>
+    <common-jifen class="common" goodsList="{{goodsList}}"></common-jifen>
+    <over loads="{{loads}}" pageFlag="{{pageFlag}}" wx:if="{{showLoading&&!empty}}"></over>
+    <is-empty text="没搜到你想要的好物哦～" url="https://img.rekoon.cn/intergal/search/search_null.png" wx:if="{{empty}}"></is-empty>
+</view>
